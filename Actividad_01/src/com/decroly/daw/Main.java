@@ -27,7 +27,7 @@ public class Main {
 		
 		//Ejercicio4
 		Scanner scanner1 = new Scanner(System.in);
-		
+	
 		System.out.println("Primer numero: ");
 		int prim = scanner.nextInt();
 		
@@ -40,6 +40,9 @@ public class Main {
 		System.out.println("Division: " + (prim/segu));
 		
 		
+		//Ejercicio5
+		Scanner scanner2 = new Scanner(System.in);
+		//...
 	}
 
 }
