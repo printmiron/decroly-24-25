@@ -1,5 +1,7 @@
 package com.decroly.daw;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -29,6 +31,13 @@ public class Main {
 		String respuesta = "Pavel";
 		System.out.println(text1 + " " + respuesta);
 		System.out.println("Edad: " + a);
+		
+		System.out.println("Introduce tu dni: ");
+		
+		Scanner reader = new Scanner (System.in);
+		String dni = reader.next ();
+		
+		System.out.println("Tu DNI es: "+dni);
 	}
 
 }
