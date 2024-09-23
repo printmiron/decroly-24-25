@@ -42,7 +42,7 @@ public class Main {
 		
 		//Ejercicio5
 		Scanner scanner2 = new Scanner(System.in);
-		//...
+		
 	}
 
 }
