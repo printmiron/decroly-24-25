@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
+//		// TODO Auto-generated method stub
+//		Scanner sc = new Scanner(System.in);
 //		//Ejercicio1
 //		System.out.println("buenos días");
 //		
@@ -168,21 +168,20 @@ public class Main {
 //		                System.out.println("Son iguales");
 //		            }
 //		
-		//Ejercicio13
-		int num;
-		System.out.println("Numero: ");
-		num = sc.nextInt();
-		
-		if (num >= 0)
-		{
-			System.out.println("Numero es psitivo");
-		} else {
-			System.out.println("Numero es negativo");
-		}
-		
-		
+//		//Ejercicio13
+//		int num;
+//		System.out.println("Numero: ");
+//		num = sc.nextInt();
+//		
+//		if (num >= 0)
+//		{
+//			System.out.println("Numero es psitivo");
+//		} else {
+//			System.out.println("Numero es negativo");
+//		}
+//		
+//		
 	} //Sting
 } //Main
 	
-
 
