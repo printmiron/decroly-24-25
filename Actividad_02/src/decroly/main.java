@@ -88,14 +88,72 @@ public class main {
 //		System.out.println("Sobresaliente");
 //	
 ////Ejercicio8
-	int num;
-	System.out.println("introduce un numero: ");
-	num = sc.nextInt();
+//	int num, i, fact = 1;
+//	System.out.println("introduce un numero: ");
+//	num = sc.nextInt();
+//	
+//	if (num < 0) {
+//		System.out.println("No es posible escribir numero negativo");
+//	}else if ( num >= 0 ) {
+//		for (i=1;i<=num;i++){
+//		      fact=fact*i;
+//		  }
+//		System.out.println("Su factorial es " + fact);
+//	}
+//		
+//	
+////Ejercicio9
+//	int hora, minutos, segundos, num;
+//	System.out.println("Escribe su hora: ");
+//	hora = sc.nextInt();
+//
+//	System.out.println("Escribe su minutos: ");
+//	minutos = sc.nextInt();
+//	
+//	System.out.println("Escribe su minutos: ");
+//	segundos = sc.nextInt();
+//	
+//	num = segundos + 1;
+//	
+//	System.out.println(hora + " : " + minutos + " : " + num);
+//	
+//	
+//
+////Ejercicio10
+//	boolean hayNegativo = false;
+//	
+//	for (int i = 0; i < 10; i++) {
+//		System.out.println("Introduce el numero no nulo: ");
+//		int numero = sc.nextInt();
+//		
+//		
+//		while (numero == 0) {
+//			System.out.println("El numero 0 no puede ser");
+//			numero = sc.nextInt();
+//		}
+//		
+//		if (numero < 0){
+//			hayNegativo = true;
+//		}
+//	}
+//	
+//	
+//	if (hayNegativo == true) {
+//		System.out.println("Se a introducido numero negativo");
+//	}else {
+//		System.out.println("No hay numero negativo");
+//	}
+//
+////Ejercicio11
+	boolean hayNegativo = false;
+	boolean hayPositivo = true;
 	
-	if (num < 0) {
-		System.out.println("No es posible escribir numero negativo");
+	for (int i = 0; i < 10; i++) {
+		System.out.println("Introduce el numeo no nulo: ");
+	while (numero == 0){
+		System.out.println();
+		}
 	}
-	
 	
 	
 	
