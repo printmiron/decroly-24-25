@@ -145,15 +145,39 @@ public class main {
 //	}
 //
 ////Ejercicio11
-	boolean hayNegativo = false;
-	boolean hayPositivo = true;
+//	int negativo = 0;
+//	int positivo = 0;
+//	
+//	
+//	for (int i = 0; i < 10; i++) {
+//		System.out.println("Introduce el numeo no nulo: ");
+//		int numero = sc.nextInt();
+//		
+//		
+//	while (numero == 0){
+//		System.out.println("El numero 0 no puede ser");
+//		numero = sc.nextInt();
+//		}
+//	
+//		if (numero < 0) {
+//			negativo++;
+//		}else if (numero > 0) {
+//			positivo++;
+//		}
+//	
+//	}	
+//	
+//	System.out.println("Numeros negativos: " + negativo);
+//	System.out.println("Numeros positivo: " + positivo);
+//	
+////Ejercicio12
+//	int negativo;
+//	int negativo;
+//	
+//	for (int i = 0; i < 0; i++) {
+//		System.out.println(Introducir los numeros);
+//	}
 	
-	for (int i = 0; i < 10; i++) {
-		System.out.println("Introduce el numeo no nulo: ");
-	while (numero == 0){
-		System.out.println();
-		}
-	}
 	
 	
 	
@@ -166,7 +190,11 @@ public class main {
 	
 	
 	
-		
+	
+	
+	
+	
+	
 	} // String
 
 } // Main
