@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modulo>
+    <Nombre>Lenguajes de Marcas y Sistemas de Gestión de Información</Nombre>
+    <HorasSemanales>4</HorasSemanales>
+    <Caracter>Obligatorio</Caracter>
+    <Fechas>
+        <FechaInicio>2010/09/15</FechaInicio>
+        <FechaFin>2011/06/30</FechaFin>
+    </Fechas>
+    <Alumnos>
+        <Alumno>
+            <Nombre>Pavel</Nombre>
+            <Apellidos>Miron</Apellidos>
+            <DNI>123456789</DNI>
+            <FechaNacimiento>2004/08/06</FechaNacimiento>
+        </Alumno>
+        <Alumno>
+            <Nombre>Max</Nombre>
+            <Apellidos>Bodean</Apellidos>
+            <DNI>123456789</DNI>
+            <FechaNacimiento>2003/10/23</FechaNacimiento>
+        </Alumno>
+    </Alumnos>
+</Modulo>

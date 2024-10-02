@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<C1>
+    <InfoPersonal>
+        <Nombre>Pavel</Nombre>
+        <Apellido>Miron</Apellido>
+        <Telefono>
+            <Movil>123456789</Movil>
+            <Fijo>123456789</Fijo>
+            <Trabajo>123456789</Trabajo>
+        </Telefono>
+        <Direccion>
+                <Calle>Calle Tomaz Maza Solano</Calle>
+                <Ciudad>Astillero</Ciudad>
+                <CodigoPostal>39611</CodigoPostal>
+        </Direccion>
+    </InfoPersonal>
+</C1>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<R>
+    <R1> 
+        <Nombre>Hamburgesa</Nombre>
+        <Ingredientes>
+            <Ingrediente>
+                <Nombre>Pan</Nombre>
+                <Cantidad>2</Cantidad>
+                <Unidad>Trozos</Unidad>
+            </Ingrediente>
+            <Ingrediente>
+                <Nombre>Carne</Nombre>
+                <Cantidad>200</Cantidad>
+                <Unidad>gramos</Unidad>
+            </Ingrediente>
+            <Ingrediente>
+                <Nombre>Queso</Nombre>
+                <Cantidad>100</Cantidad>
+                <Unidad>gramos</Unidad>
+            </Ingrediente>
+            <Ingrediente>
+                <Nombre>Ensalada</Nombre>
+                <Cantidad>150</Cantidad>
+                <Unidad>gramos</Unidad>
+            </Ingrediente>
+            <Ingrediente>
+                <Nombre>Tomate</Nombre>
+                <Cantidad>80</Cantidad>
+                <Unidad>gramos</Unidad>
+            </Ingrediente>
+            <Pasos>
+                <Paso numero="1">Preparar los ingedientes</Paso>
+                <Paso numero="2">Poner todo junto</Paso>
+                <Paso numero="3">Poner en microonda</Paso>
+            </Pasos>
+            <TiempoDePreparacion>15 minutos</TiempoDePreparacion>
+        </Ingredientes>
+    </R1>
+</R>

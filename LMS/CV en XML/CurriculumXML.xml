@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cv>
+    <InfoPersonal>
+
+        <nombre>Pavel</nombre>
+        <apellido>Miron</apellido>
+        <FechaDeNacimiento>2004/08/06</FechaDeNacimiento>
+        <telefono>643087429</telefono>
+        <gmail>pavelmiron6824@gmail.com</gmail>
+        <direccion>
+            <calle>C/ Tomas Maza Solano 84</calle>
+            <ciudad>Astillero</ciudad>
+            <codigo>39611</codigo>
+            <pais>España</pais>
+        </direccion>
+        <nie>y7665861q</nie>
+
+    </InfoPersonal>
+
+    <ExperienciaProfesional>
+
+        <trabajo>
+            <titulo>Desarollo Aplicaciones</titulo>
+            <empresa>Amazon</empresa>
+            <localidad>Santander</localidad>
+            <DiaDeInicio>2017/07/22</DiaDeInicio>
+            <DiaDeFinalizo>2021/01/10</DiaDeFinalizo>
+            <responsabilidades>
+                <responsabilidad>Desarrollo de aplicaciones móviles y web para optimizar los procesos de logística</responsabilidad>
+                <responsabilidad>Implementación de soluciones en la nube utilizando AWS</responsabilidad>
+                <responsabilidad>Colaboración con equipos internacionales para implementar nuevas funcionalidades</responsabilidad>
+            </responsabilidades>
+        </trabajo>
+
+        <trabajo>
+            <titulo>Ingeniero de Software</titulo>
+            <empresa>Microsoft</empresa>
+            <localidad>Madrid</localidad>
+            <DiaDeInicio>2015/04/12</DiaDeInicio>
+            <DiaDeFinalizo>2016/12/06</DiaDeFinalizo>
+            <responsabilidades>
+                <responsabilidad>Desarrollo de herramientas de productividad en la suite de Office 365</responsabilidad>
+                <responsabilidad>Optimización de procesos internos a través de soluciones de software personalizadas</responsabilidad>
+                <responsabilidad>Participación en la mejora del rendimiento de aplicaciones críticas para clientes empresariales</responsabilidad>
+            </responsabilidades>
+        </trabajo>
+
+    </ExperienciaProfesional>
+
+    <Educacion>
+
+        <grado>
+
+            <titulo>Grado en Ingeniería Informática</titulo>
+            <grado>Universidad Complutense de Madrid</grado>
+            <localidad>Madrid, España</localidad>
+            <inicio>2012-09-01</inicio>
+            <finalizo>2016-06-30</finalizo>
+
+        </grado>
+
+        <grado>
+
+            <titulo>Curso de Desarrollo Web Full Stack</titulo>
+            <grado>Academia de Programación Code</grado>
+            <localidad>Online</localidad>
+            <inicio>2019-09-01</inicio>
+            <finalizo>2020-02-29</finalizo>
+
+        </grado>
+
+    </Educacion>
+
+    <HabilidadesEnProg>
+
+        <habilidad>HTML</habilidad>
+        <habilidad>CSS</habilidad>
+        <habilidad>JAVA</habilidad>
+        <habilidad>JAVASCRIPT</habilidad>
+        <habilidad>MySQL</habilidad>
+        <habilidad>GIT</habilidad>
+
+    </HabilidadesEnProg>
+
+    <HabilidadesPersonales>
+
+        <habilidad>Pensamiento Crítico</habilidad>
+        <habilidad>Resolución de Problemas</habilidad>
+        <habilidad>Comunicación</habilidad>
+        <habilidad>Adaptabilidad</habilidad>
+        <habilidad>Atención al Detalle</habilidad>
+        <habilidad>Colaboración</habilidad>
+        <habilidad>Persistencia</habilidad>
+
+    </HabilidadesPersonales>
+
+    <Lenguages>
+        <lenguage>Español</lenguage>
+        <lenguage>Ruso</lenguage>
+        <lenguage>Rumano</lenguage>
+        <lenguage>Ingles</lenguage>
+    </Lenguages>
+
+    <Hobby>
+        <hobby>Gimnasio</hobby>
+    </Hobby>
+
+</cv>

@@ -171,12 +171,12 @@ public class main {
 //	System.out.println("Numeros positivo: " + positivo);
 //	
 ////Ejercicio12
-//	int negativo;
-//	int negativo;
-//	
-//	for (int i = 0; i < 0; i++) {
-//		System.out.println(Introducir los numeros);
-//	}
+// int negativo;
+// int negativo;
+
+// for (int i = 0; i < 0; i++) {
+// 	System.out.println(Introducir los numeros);
+// }
 	
 	
 	

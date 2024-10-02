@@ -86,17 +86,12 @@ public class Main {
 //		System.out.println("Escribe numero 2: ");
 //		num2 = sc.nextInt();
 //		
-//		
-//		 if(num1 > num2)
-//	        {
-//	            System.out.println(num2 + ":" + num1);
-//	        }else if(num2 > num1){
-//	                System.out.println(num1 + ":" + num2);
-//	            }else{
-//	                System.out.println("Son iguales");
-//	            }
+//		int menor = Math.min(num1, num2);
+//              int mayor = Math.max(num1, num2);
+//        
+//              System.out.println(menor == mayor ? "Son iguales" : menor + ":" + mayor);
 //	
-//	    //Ejercicio9
+//	        //Ejercicio9
 //		int num1 = 0;
 //		System.out.println("Escribe numero 1: ");
 //		num1 = sc.nextInt();
@@ -105,30 +100,25 @@ public class Main {
 //		System.out.println("Escribe numero 2: ");
 //		num2 = sc.nextInt();
 //		
-//		 if(num1 > num2)
-//		        {
-//		            System.out.println(num1);
-//		        }else if(num2 > num1){
-//		                System.out.println(num2);
-//		            }else{
-//		                System.out.println("Son iguales");
-//		            }
-//			 
+//		int mayor = Math.max(num1, num2);
+//        
+//              System.out.println(num1 == num2 ? "Son iguales" : mayor);
+//        
 //		//Ejercicio10
-//			double num1 = 0;
-//			System.out.println("Escribe numero 1: ");
-//			num1 = sc.nextDouble();
+//		double num1 = 0;
+//		System.out.println("Escribe numero 1: ");
+//		num1 = sc.nextDouble();
 //			
-//			double num2 = 0;
-//			System.out.println("Escribe numero 2: ");
-//			num2 = sc.nextDouble();
+//		double num2 = 0;
+//		System.out.println("Escribe numero 2: ");
+//		num2 = sc.nextDouble();
 //			
-//			double num3 = 0;
-//			System.out.println("Escribe numero 3: ");
-//			num3 = sc.nextDouble();
+//		double num3 = 0;
+//		System.out.println("Escribe numero 3: ");
+//		num3 = sc.nextDouble();
 //			
 //			
-//			System.out.println(Math.max(num3,Math.max(num1, num2)));
+//		System.out.println(Math.max(num3,Math.max(num1, num2)));
 //			
 //		
 //		//Ejercicio11
@@ -141,14 +131,7 @@ public class Main {
 //		System.out.println("Suma: " + (prim+segu));
 //		System.out.println("Resta: " + (prim-segu));
 //		System.out.println("Multiplicacion: " + (prim*segu));
-//		
-//		if (prim == 0){
-//		System.out.println("Division inposible");
-//		}else if (segu == 0){
-//			System.out.println("Division inposible");
-//		}else {
-//			System.out.println("Division: " + (prim/segu));
-//		}
+//		System.out.println("Division: " + (segu != 0 ? (double) prim / segu : "Division por cero imposible"));
 //		
 //		//Ejercicio12
 //		int num1 = 0;
@@ -159,26 +142,18 @@ public class Main {
 //		System.out.println("Escribe numero 2: ");
 //		num2 = sc.nextInt();
 //		
-//		 if(num1 > num2)
-//		        {
-//		            System.out.println(num1);
-//		        }else if(num2 > num1){
-//		                System.out.println(num2);
-//		            }else{
-//		                System.out.println("Son iguales");
-//		            }
+//		int mayor = Math.max(num1, num2);
+//		
+//		System.out.println("El mayor es: " + mayor);
 //		
 //		//Ejercicio13
 //		int num;
 //		System.out.println("Numero: ");
 //		num = sc.nextInt();
 //		
-//		if (num >= 0)
-//		{
-//			System.out.println("Numero es psitivo");
-//		} else {
-//			System.out.println("Numero es negativo");
-//		}
+//		String resultado = (Math.signum(num) >= 0) ? "positivo" : "negativo";
+//
+//              System.out.println("El numero es " + resultado);
 //		
 //		
 	} //Sting
