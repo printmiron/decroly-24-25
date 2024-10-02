@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #838282;
+    background-image: url(https://wallpapers.com/images/hd/4k-minimalist-black-forest-ma3c57wla5k493zj.jpg);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+.product {
+    size: 50%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff77;
+}
+
+.product img {
+    width: 50%;
+}
+
+.product h2 {
+    font-size: 2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.product p {
+    font-size: 1.10em;
+    color: #000000;
+}
