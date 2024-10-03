@@ -147,14 +147,14 @@ public class Main {
 //		System.out.println("El mayor es: " + mayor);
 //		
 //		//Ejercicio13
-//		int num;
-//		System.out.println("Numero: ");
-//		num = sc.nextInt();
-//		
-//		String resultado = (Math.signum(num) >= 0) ? "positivo" : "negativo";
-//
-//              System.out.println("El numero es " + resultado);
-//		
+		int num;
+		System.out.println("Numero: ");
+		num = sc.nextInt();
+		
+		String resultado = (Math.signum(num) >= 0) ? "positivo" : "negativo";
+
+        System.out.println("El numero es " + resultado);
+		
 //		
 	} //Sting
 } //Main

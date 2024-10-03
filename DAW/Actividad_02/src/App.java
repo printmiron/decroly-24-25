@@ -1,13 +1,9 @@
-package decroly;
-
 import java.util.Scanner;
 
-public class main {
-
-	public static void main(String[] args) {
-		
-	Scanner sc = new Scanner(System.in);
-		
+public class App {
+    public static void main(String[] args) throws Exception {
+        
+                Scanner sc = new Scanner(System.in);
 ////Ejercicio1
 //	int num = 0;
 //	System.out.println("Escribe su edad");
@@ -171,30 +167,57 @@ public class main {
 //	System.out.println("Numeros positivo: " + positivo);
 //	
 ////Ejercicio12
-// int negativo;
-// int negativo;
+        // int negativo = 0;
+        // int positivo = 0;
+        // int numero;
+        // boolean hayCero = false;
 
-// for (int i = 0; i < 0; i++) {
-// 	System.out.println(Introducir los numeros);
-// }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	} // String
+        // System.out.println("Introduce el numeo no nulo: ");
+        
+		// do {
 
-} // Main
+        //     numero = sc.nextInt();
+
+        //     if (numero < 0) {
+        //         negativo++;
+        //     } else if (numero > 0) {
+        //         positivo++;
+        //         hayCero = false;
+        //     }
+			
+		// } while (numero != 0);
+
+
+        // System.out.println("Numeros negativos: " + negativo);
+        // System.out.println("Numeros positivo: " + positivo);
+////Ejercicio13
+        int num, suma, producto;
+
+        suma = 0;
+        producto = 1;
+
+        for (int i = 0; i <= 10; i++) {
+            System.out.println("Introduce los numeros: ");
+            num = sc.nextInt();
+            suma = suma + num;
+            producto = producto * num;
+        }
+
+        System.out.println("La suma es: " + suma);
+        System.out.println("El producto es: " + producto);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
