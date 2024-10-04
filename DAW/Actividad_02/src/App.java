@@ -191,26 +191,38 @@ public class App {
         // System.out.println("Numeros negativos: " + negativo);
         // System.out.println("Numeros positivo: " + positivo);
 ////Ejercicio13
-        int num, suma, producto;
+        // int suma, producto;
 
-        suma = 0;
-        producto = 1;
+        // suma = 0;
+        // producto = 1;
 
-        for (int i = 0; i <= 10; i++) {
-            System.out.println("Introduce los numeros: ");
-            num = sc.nextInt();
-            suma = suma + num;
-            producto = producto * num;
+        // for (int i = 1; i <= 10; i++) {
+        //     suma = suma + i;
+        //     producto = producto * i;
+        // }
+
+        // System.out.println("La suma es: " + suma);
+        // System.out.println("El producto es: " + producto);
+
+////Ejercicio14
+        double salario, horas, tasas;
+
+        salario = 10;
+        horas = 1;
+        
+        System.out.println("Escriba su nombre: ");
+        String nombre = sc.nextLine();
+
+
+        System.out.println("Escribe cunatos horas tienes trabajado: ");
+        horas = sc.nextDouble();
+
+        if ( horas >= 1 ){
+            salario = salario * horas;
+        }else if ( horas >= 35 ){
+            
         }
-
-        System.out.println("La suma es: " + suma);
-        System.out.println("El producto es: " + producto);
-
-
-
-
-
-
+        
 
 
 
