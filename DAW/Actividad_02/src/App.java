@@ -5,18 +5,18 @@ public class App {
         
                 Scanner sc = new Scanner(System.in);
 ////Ejercicio1
-//	int num = 0;
-//	System.out.println("Escribe su edad");
-//	num = sc.nextInt();
-//	
-//	
-//	
-//	 	if( num >= 18 ) {
-//			 System.out.println( num + " Eres mayor de edad");
-//		}else{
-//		 	System.out.println(num + " Eres menor de edad");
-//	 	}
-//	 
+	// int num = 0;
+	// System.out.println("Escribe su edad");
+	// num = sc.nextInt();
+	
+	
+	
+	//  	if( num >= 18 ) {
+	// 		 System.out.println( num + " Eres mayor de edad");
+	// 	}else{
+	// 	 	System.out.println(num + " Eres menor de edad");
+	//  	}
+	 
 // //Ejercicio2
 //	int num = 0;
 //	System.out.println("Escribe su edad");
