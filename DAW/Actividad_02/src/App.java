@@ -205,25 +205,44 @@ public class App {
         // System.out.println("El producto es: " + producto);
 
 ////Ejercicio14
-        double salario, horas, tasas;
-
-        salario = 10;
-        horas = 1;
-        
-        System.out.println("Escriba su nombre: ");
-        String nombre = sc.nextLine();
+        // System.out.println("Escriba su nombre: ");
+        // String nombre = sc.nextLine();
 
 
-        System.out.println("Escribe cunatos horas tienes trabajado: ");
-        horas = sc.nextDouble();
+        // System.out.println("Escribe cunatos horas tienes trabajado: ");
+        // double horasT = sc.nextDouble();
 
-        if ( horas >= 1 ){
-            salario = salario * horas;
-        }else if ( horas >= 35 ){
-            
-        }
-        
+        // double salario = 15;
 
+        // double salarioB;
+        // if (horasT <= 35) {
+        //     salarioB = horasT * salario;
+        // }else{
+        //     double horasExtra = horasT - 35;
+        //     salarioB = ( 35 * salario) + ( horasExtra * salario * 1.5 );
+        // }
+
+        // double salarioN;
+        // double impuestos;
+
+        // if (salarioB <= 500) {
+        //     impuestos = 0;
+        //     salarioN = salarioB;
+        // }else if ( salarioB <= 900 ){
+        //     impuestos = ( salarioB - 500 ) * 0.25;
+        //     salarioN = salarioB - impuestos;    
+        // }else{
+        //     impuestos = ( 900 - 500 ) * 0.25;
+        //     impuestos += ( salarioB - 900 ) * 0.45;
+        //     salarioN = salarioB - impuestos;
+        // }
+
+        // System.out.println("Nombre: " + nombre);
+        // System.out.println("Salario bruto: " + salarioB);
+        // System.out.println("Tasas: " + impuestos);
+        // System.out.println("Salario neto: " + salarioN);
+
+        // sc.close();
 
 
 
