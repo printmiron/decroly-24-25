@@ -1,4 +1,12 @@
-for (int i = 0; i < 10; i++) {
-            System.out.println("Numero " + ( i+1 ) + ":");
-            numero[i] = sc.nextDouble();
+
+        for (int i = 0; i < numP; i++) {
+            if (numP <= numQ) {
+                numero[i] = numP + i;
+            }else{
+                numero[i] = numP - i;
+            }
+        }
+
+        for (int i = 0; i < numP; i++) {
+            System.err.println("Numero[" + i +"]" + numero[i]);
         }
