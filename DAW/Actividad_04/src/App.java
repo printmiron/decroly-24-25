@@ -168,39 +168,84 @@ public class App {
 
         //Ejercicio9
 
-        // double numero [] = new double [100];
+        // double numero[] = new double [100];
 
-        // for (int i = 0; i < numero.length; i++) {
-            
+        // System.out.println("Dame un valor real R: ");
+        // int numR = sc.nextInt();
+
+        // for (int i = 0; i < 100; i++) {
+
         //     numero[i] = 1 + Math.random()*10;
 
+        //     if ( numR >= numero[i]) {
+        //         System.out.println("Numeros mayores o iguales son del valor " + numR + " son: " + numero[i]);
+        //     }
         // }
-
-        // System.out.println("Introduce el valor N: ");
-        // int valorN = sc.nextInt();
-
-
-
-        // System.out.println("Posiciones del array aparece N: " );
         
 
         //Ejercicio10
 
-        double altura;
-        int persona = 0;
-        double media = 1.75;
 
-        System.out.println("Cuantas personas hay: ");
-        persona = sc.nextInt();
+        // System.out.println("Cuantas personas hay: ");
+        // int persona = sc.nextInt();
 
-        double array [] = new double [persona];
+        // double altura [] = new double [persona];
 
-        System.out.println("Altura: ");
-        altura = sc.nextDouble();
+        // for (int i = 0; i < persona; i++) {
+        //     System.out.println("Introdeuce la altura de la persona: " + ( 1 + i ));
+        //     altura[i] = sc.nextDouble();
+        // }        
 
-        for (int i = 0; i < altura; i++) {
-            
-        }        
+        // double suma = 0;
+        // double max = altura[0];
+        // double min = altura[0];
+
+        // for (int i = 0; i < persona; i++) {
+        //     suma += altura[i];
+        //     if (altura[i] > max) {
+        //         max = altura[i];
+        //     }
+
+        //     if (altura[i] < min) {
+        //         min = altura[i];
+        //     }
+        // }
+
+        // double media = suma / persona;
+
+        // int encima = 0;
+        // int debajo = 0;
+
+        // for (int i = 0; i < persona; i++) {
+        //     if (altura[i] > media) {
+        //         encima++;
+        //     }
+
+        //     if (altura[i] < media) {
+        //         debajo++;
+        //     }
+        // }
+
+        // System.out.println("Medias alturas: " + media);
+        // System.out.println("Altura maxima: " + max);
+        // System.out.println("Altura minima: " + min);
+        // System.err.println("Personas por encima de la media: " + encima);
+        // System.err.println("Personas por debajo de la media: " + debajo);
+
+        //Ejercicio 11
+
+        int valores1[] = new int [100];
+        int valores2[] = new int [100];
+
+        for (int i = 0; i < 100; i++) {
+            valores1[i] = i + 1;
+        }
+
+        for (int i = 0; i < 100; i++) {
+            valores2[i] = valores1.length - 1;
+        }
+        
+        
 
 
 
