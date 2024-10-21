@@ -1,6 +1,5 @@
 
 import java.util.Scanner;
-import javax.swing.text.html.CSS;
 
 public class App {
 
@@ -239,18 +238,39 @@ public class App {
 
         //Ejercicio13
 
-        int numero = 0, incremento, valor;
-        
-        int array [] = new int [numero];
+        // System.out.println("Introduce el valor V: ");
+        // int V = sc.nextInt();
 
-        for (int i = 0; i < numero; i++) {
-            System.out.println("Introduce el Nº: ");
-            numero = sc.nextInt();
-        }
+        // System.out.println("Introduce el incremento I: ");
+        // int I = sc.nextInt();
 
-        for (int i = 0; i < valor; i++) {
-            
-        }
+        // System.out.println("Introduce el numero: ");
+        // int n = sc.nextInt();
+
+        // int valores [] = new int [n];
+
+        // for (int i = 0; i < n; i++) {
+        //     valores[i] = V + ( i * I );
+        // }
+
+        // System.out.println("Resultado: ");
+        // for (int i = 0; i < n; i++) {
+        //     System.out.println(valores[i] + " ");
+        // }
+
+        //Ejercicio14
+
+        // int numeros [] = new int [10];
+
+        // for (int i = 0; i < numeros.length; i++) {
+        //     numeros[i] = i + 1; 
+        // }
+
+        // for (int i = 0; i < numeros.length; i++) {
+        //     for (int j = 0; j < numeros[i]; j++) {
+        //         System.out.println(numeros[i]);
+        //     }
+        // }
 
 
 
