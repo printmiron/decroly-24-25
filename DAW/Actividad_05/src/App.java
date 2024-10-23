@@ -47,44 +47,64 @@ public class App {
         // System.out.println( (tresletrasNombre + tresletrasApellido1 + tresletrasApellido2).toUpperCase() );
 
         //Ejercicio4
-        System.out.println("Introduce una cadena de texto: ");
-        String texto = sc.nextLine();
+        // System.out.println("Introduce una cadena de texto: ");
+        // String texto = sc.nextLine();
 
-        int A = 0, E = 0, I = 0, O = 0, U = 0;
+        // int a = 0, e = 0, i = 0, o = 0, u = 0;
 
-        for (int i = 0; i < texto.length(); i++) {
+        // texto = texto.toLowerCase();
+
+        // for (int j = 0; j < texto.length(); j++) {
             
-            switch (texto) {
+        //     switch (texto.charAt(j)) {
 
-                case "a":
-                    A++;
-                    break;
+        //         case 'a':
+        //             a++;
+        //             break;
 
-                case "e":
-                    E++;
-                    break;  
+        //         case 'e':
+        //             e++;
+        //             break;  
                 
-                case "i":
-                    I++;
-                    break; 
+        //         case 'i':
+        //             i++;
+        //             break; 
 
-                case "o":
-                    O++;
-                    break; 
+        //         case 'o':
+        //             o++;
+        //             break; 
 
-                case "u":
-                    U++;
-                    break;
+        //         case 'u':
+        //             u++;
+        //             break;
 
-                default:
-                    break;
+        //         default:
+        //             break;
 
                     
-            }
-        }
+        //     }
+        // }
 
+        // System.out.println("A: " + a);
+        // System.out.println("E: " + e);
+        // System.out.println("I: " + i);
+        // System.out.println("O: " + o);
+        // System.out.println("U: " + u);
 
+        //Ejercicio5
+    
+        // System.out.println("Introduce una frase:");
+        // String frase = sc.nextLine();
 
+        // String fraseSinEspacios = frase.replaceAll(" ", "").toLowerCase();
+
+        // String fraseInvertida = new StringBuilder(fraseSinEspacios).reverse().toString();
+
+        // if (fraseSinEspacios.equals(fraseInvertida)) {
+        //     System.out.println("La frase es un palíndromo.");
+        // } else {
+        //     System.out.println("La frase no es un palíndromo.");
+        // }
 
 
 
