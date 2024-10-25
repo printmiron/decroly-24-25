@@ -33,14 +33,13 @@ public class App {
 
         // for (int i = 0; i < matriz.length; i++) {
         //    for (int j = 0; j < matriz.length; j++) {
-        //        matriz[i][j] = num * ( j + 1 );
-        //        num++;
+        //        matriz[i][j] = ( i + 1 ) * ( j + 1 );
         //    } 
         // }
 
         // for (int i = 0; i < matriz.length; i++) {
         //     for (int j = 0; j < matriz.length; j++) {
-        //         System.out.println(matriz[i][j]);
+        //         System.out.println(matriz[i][j] + "\t");
         //     }
         //     System.out.println();
         // }
@@ -118,44 +117,44 @@ public class App {
 
         //Ejercicio5
 
-        int hombres = 0, mujeres = 0; 
-        int sumaHombres = 0; 
-        int sumaMujeres = 0;
+        // int hombres = 0, mujeres = 0; 
+        // int sumaHombres = 0; 
+        // int sumaMujeres = 0;
 
-        System.out.println("Numero de personas: ");
-        int num = sc.nextInt();
+        // System.out.println("Numero de personas: ");
+        // int num = sc.nextInt();
 
-        int sueldos [][] = new int [num][2];
+        // int sueldos [][] = new int [num][2];
 
-        for (int i = 0; i < sueldos.length; i++) {
-            for (int j = 0; j < sueldos.length; j++) {
+        // for (int i = 0; i < sueldos.length; i++) {
+        //     for (int j = 0; j < sueldos.length; j++) {
                 
-                if (j == 0) {
-                    System.out.println("Inserta 0 para hombres y 1 para mujeres: " + (i+1));
-                sueldos[i][j] = sc.nextInt();
-                }
+        //         if (j == 0) {
+        //             System.out.println("Inserta 0 para hombres y 1 para mujeres: " + (i+1));
+        //         sueldos[i][j] = sc.nextInt();
+        //         }
                 
-                if (j == 1) {
-                    System.out.print("Sueldo: ");
-                    sueldos[i][j] = sc.nextInt();
-                }
-            }
+        //         if (j == 1) {
+        //             System.out.print("Sueldo: ");
+        //             sueldos[i][j] = sc.nextInt();
+        //         }
+        //     }
             
-        }
+        // }
 
-        for (int i = 0; i < sueldos.length; i++) {
-            if (sueldos[i][0] == 0) {
-                hombres++;
-                sumaHombres += sueldos[i][1];
-            }
-            if (sueldos[i][0] == 1) {
-                mujeres++;
-                sumaMujeres += sueldos[i][1];
-            }
-        }
+        // for (int i = 0; i < sueldos.length; i++) {
+        //     if (sueldos[i][0] == 0) {
+        //         hombres++;
+        //         sumaHombres += sueldos[i][1];
+        //     }
+        //     if (sueldos[i][0] == 1) {
+        //         mujeres++;
+        //         sumaMujeres += sueldos[i][1];
+        //     }
+        // }
 
-        System.out.println("El sueldo medio de los hombres es: " + (sumaHombres / hombres));
-        System.out.println("El sueldo medio de las mujeres es: " + (sumaMujeres / mujeres));
+        // System.out.println("El sueldo medio de los hombres es: " + (sumaHombres / hombres));
+        // System.out.println("El sueldo medio de las mujeres es: " + (sumaMujeres / mujeres));
 
 
 
