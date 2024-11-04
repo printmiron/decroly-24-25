@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://img.freepik.com/foto-gratis/arreglo-raquetas-pelotas-tenis_23-2149434236.jpg?t=st=1729845787~exp=1729849387~hmac=a7204951d8feb8335e9407dfd580311597dfc0d4005926ed4cedb332691ea30e&w=1380);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    background-color: #00000070;
+    color: white;
+    padding: 1em;
+    width: 100%;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 6em 0;
+}
+
+
+.fila {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+.pista {
+    color: white;
+    width: 30%;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 37px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 37px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 37px 4px rgba(0,0,0,0.75);
+}
+
+.libre {
+    background-color: #21741aa9;
+    border-color: #ffffff
+}
+
+.reservada {
+    background-color: #882a3298;
+    border-color: #ffffff;
+}
+
+
+button {
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+.reservar {
+    background-color: #36c749;
+    color: white;
+}
+
+.cancelar {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:disabled {
+    background-color: #8a8a8a7e;
+    cursor: not-allowed;
+}
+
+footer {
+    background-color: #00000070;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

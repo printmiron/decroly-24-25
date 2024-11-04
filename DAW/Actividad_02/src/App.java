@@ -1,21 +1,22 @@
+
 import java.util.Scanner;
 
 public class App {
+
     public static void main(String[] args) throws Exception {
-        
-                Scanner sc = new Scanner(System.in);
-////Ejercicio1
-	// int num = 0;
-	// System.out.println("Escribe su edad");
-	// num = sc.nextInt();
-	
-	
-	
-	//  	if( num >= 18 ) {
-	// 		 System.out.println( num + " Eres mayor de edad");
-	// 	}else{
-	// 	 	System.out.println(num + " Eres menor de edad");
-	//  	}
+
+        Scanner sc = new Scanner(System.in);
+
+
+// //Ejercicio1
+// int num = 0;
+// System.out.println("Escribe su edad");
+// num = sc.nextInt();
+//  	if( num >= 18 ) {
+// 		 System.out.println( num + " Eres mayor de edad");
+// 	}else{
+// 	 	System.out.println(num + " Eres menor de edad");
+//  	}
 	 
 // //Ejercicio2
 //	int num = 0;
