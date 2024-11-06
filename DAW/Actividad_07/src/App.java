@@ -57,7 +57,7 @@ public class App {
                 break;
 
             default:
-                throw new AssertionError();
+            
         }
 
     

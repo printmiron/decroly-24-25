@@ -186,96 +186,61 @@ public class App {
         // }
         //Ejercicio12
         // int opcion;
-
         // int array[] = new int[10];
-
         // do {
-
         //     System.out.println("a) Mostrar valores");
         //     System.out.println("b) Introducir valor");
         //     System.out.println("c) Salir");
         //     opcion = sc.nextInt();
-
         //     switch (opcion) {
         //         case 1:
-
         //             for (int i = 0; i < 10; i++) {
         //                 System.out.println(array[i] + (i + 1));
         //             }
-
         //             break;
-
         //         case 2:
-
         //             System.out.println("Ingresa el valor P: ");
         //             int numP = sc.nextInt();
-
         //             System.out.println("Ingresa el valor V: ");
         //             int numV = sc.nextInt();
-
         //             array[numP] = numV;
-
         //             System.out.println("Array despues de modificar: ");
-
         //             for (int i = 0; i < array.length; i++) {
         //                 System.out.println(array[ i + 1 ] + " ");
         //             }
-
         //             break;
-
         //         case 3:
-
         //             System.err.println("Salir de programa!");
-
         //             break;
-
         //         default:
         //         System.out.println("Opcion no valida!");
         //             throw new AssertionError();
         //     }
-
         // } while (opcion != 3);
-
         //Ejercicio13
-
         // System.out.println("Introduce el valor V: ");
         // int V = sc.nextInt();
-
         // System.out.println("Introduce el incremento I: ");
         // int I = sc.nextInt();
-
         // System.out.println("Introduce el numero: ");
         // int n = sc.nextInt();
-
         // int valores [] = new int [n];
-
         // for (int i = 0; i < n; i++) {
         //     valores[i] = V + ( i * I );
         // }
-
         // System.out.println("Resultado: ");
         // for (int i = 0; i < n; i++) {
         //     System.out.println(valores[i] + " ");
         // }
-
         //Ejercicio14
-
         // int numeros [] = new int [10];
-
         // for (int i = 0; i < numeros.length; i++) {
         //     numeros[i] = i + 1; 
         // }
-
         // for (int i = 0; i < numeros.length; i++) {
         //     for (int j = 0; j < numeros[i]; j++) {
         //         System.out.println(numeros[i]);
         //     }
         // }
-
-
-
-
     }
 }
-
-
