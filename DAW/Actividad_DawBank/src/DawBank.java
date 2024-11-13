@@ -5,13 +5,13 @@ public class DawBank {
         
         Scanner sc = new Scanner(System.in);
 
-        String DatosCuenta;
-        String IBAN;
-        String Titular;
-        int Saldo;
-        int Ingreso;
-        int Retirado;
-        String Movimientos;
+        String datosCuenta;
+        String iban;
+        String titular;
+        int saldo;
+        int ingreso;
+        int retirado;
+        String movimientos;
 
         int opcion;
 

@@ -1,11 +1,11 @@
 public class Movimiento {
-
+    
     int id;
-    int fecha;
+    String fecha;
     String tipo;
-    int cantidad;
+    double cantidad;
 
-    public Movimiento (int id, int fecha, String tipo, int cantidad){
+    public Movimiento (int id, String fecha, String tipo, double cantidad){
         this.id = id;
         this.fecha = fecha;
         this.tipo = tipo;
@@ -16,7 +16,7 @@ public class Movimiento {
         return this.id;
     }
 
-    public int getFecha(){
+    public String getFecha(){
         return this.fecha;
     } 
 
@@ -24,13 +24,14 @@ public class Movimiento {
         return this.tipo;
     }
 
-    public int getCantidad(){
+    public double getCantidad(){
         return this.cantidad;
     }
 
     public String mostrarInfoMovimiento(){
 
-        String info = String.format("Movimiento - ID: %s, Fecha: %s, Tipo: %s, Cantidad: %s", this.id, this.fecha, this.tipo, this.cantidad);
+        String info = String.format("Movimiento - ID: %s, Fecha: %s, Tipo: %s, Cantidad: %s", 
+        this.id, this.fecha, this.tipo, this.cantidad);
 
         return info;
     }
