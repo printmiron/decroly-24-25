@@ -1,33 +1,48 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: url(https://images.pexels.com/photos/28772453/pexels-photo-28772453/free-photo-of-vista-panoramica-del-gran-canal-de-venecia-italia.jpeg);
+
+}
+
+.imagen_in{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    backdrop-filter: blur(2px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
 }
 
 header {
-    background-color: #33333300;
+    background-color: #ffffff;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1.2rem 2rem;
     flex-direction: column;
+    
 }
 
-header .logo h1 {
-    font-size: 4rem;
-    color: #d49a4d;
+.nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 1rem;
+    color: #000000;
+    line-height: 0;
+    margin: 0 20px;
 }
 
 header .nav ul {
@@ -40,14 +55,14 @@ header .nav ul li {
 }
 
 header .nav ul li a {
-    color: #d49a4d;
+    color: #000000;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
 }
 
 header .nav ul li a:hover {
-    color: #000000;
+    color: #a3a3a3;
 }
 
 .tienda{
@@ -65,9 +80,9 @@ header .nav ul li a:hover {
 .Joyeria {
     display: grid;
     grid-template-rows: auto 1fr auto auto;
-    background-color: #0000002f;
+    background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     padding: 2rem;
     text-align: center;
 }
@@ -84,30 +99,25 @@ header .nav ul li a:hover {
     font-weight: bold;
     font-size: 1rem;
     margin-bottom: 1rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .Descripcion {
-    font-weight: bold;
     font-size: 1rem;
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 1rem 0;
 }
 
 .Precio {
     font-size: 3rem;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: color 0.3s;
-}
-
-.Precio:hover{
-    color: #d49a4d;
 }
 
 footer {
     background-color: #33333300;
-    color: #d49a4d;
+    color: #000000;
     padding: 1.5rem 2rem;
     display: flex;
     flex-direction: column;
