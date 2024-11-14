@@ -1,21 +1,23 @@
+
 import java.util.Scanner;
 
 public class DawBank {
+
     public static void main(String[] args) throws Exception {
-        
+
         Scanner sc = new Scanner(System.in);
 
-        String datosCuenta;
-        String iban;
-        String titular;
-        int saldo;
-        int ingreso;
-        int retirado;
-        String movimientos;
+        System.out.println("Nombre del titular: ");
+        String titular = sc.nextLine();
+
+        System.out.println("Introduce su IBAN: ");
+        String iban = sc.nextLine();
+
+        CuentaBancaria C1 = new CuentaBancaria(iban, titular, saldo);
 
         int opcion;
 
-        do { 
+        do {
 
             System.out.println("1. Datos de la cuenta");
             System.out.println("2. IBAN");
@@ -30,37 +32,36 @@ public class DawBank {
 
             switch (opcion) {
 
-
                 case 1:
-                    
+                        
                     break;
 
                 case 2:
-                    
+
                     break;
 
                 case 3:
-                    
+
                     break;
 
                 case 4:
-                    
+
                     break;
 
                 case 5:
-                    
+
                     break;
 
                 case 6:
-                    
+
                     break;
 
                 case 7:
-                    
+
                     break;
 
                 case 8:
-                    
+
                     break;
 
                 default:
