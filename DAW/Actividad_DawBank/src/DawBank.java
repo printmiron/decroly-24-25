@@ -7,16 +7,21 @@ public class DawBank {
 
         Scanner sc = new Scanner(System.in);
 
+        //Pida el nombre y IBAN
         System.out.println("Nombre del titular: ");
         String titular = sc.nextLine();
 
         System.out.println("Introduce su IBAN: ");
         String iban = sc.nextLine();
 
-        CuentaBancaria C1 = new CuentaBancaria(iban, titular, saldo);
+        //Contructor
+        CuentaBancaria cuenta = new CuentaBancaria(iban, titular, 0);
+        Movimiento mov = new Movimiento(0, titular, iban, 0);
+        
 
-        int opcion;
+        String opcion;
 
+        //Menu
         do {
 
             System.out.println("1. Datos de la cuenta");
@@ -28,46 +33,48 @@ public class DawBank {
             System.out.println("7. Movimientos");
             System.out.println("8. Salir");
 
-            opcion = sc.nextInt();
+            opcion = sc.nextLine();
 
             switch (opcion) {
+                case "1":
+                        System.out.println(cuenta.infoCuentaBancaria());
+                    break;
+                case "2":
+                        System.out.println("IBAN: " + iban);
+                    break;
 
-                case 1:
+                case "3":
+                        System.out.println("Titular: " + titular);
+                    break;
+                        
+                case "4":
+                        System.out.println(cuenta.infoSaldo());
+                    break;
+
+                case "5":
+                        System.out.println("Cuanto dinero quieres ingresar?" + cuenta.infoSaldo());
+                        int ingresoD = sc.nextInt();
+
                         
                     break;
 
-                case 2:
+                case "6":
 
                     break;
 
-                case 3:
-
+                case "7":
+                        System.out.println(mov.mostrarInfoMovimiento() + " ");
                     break;
 
-                case 4:
-
-                    break;
-
-                case 5:
-
-                    break;
-
-                case 6:
-
-                    break;
-
-                case 7:
-
-                    break;
-
-                case 8:
-
+                case "8":
+                        System.out.println("Hasta luego!");
                     break;
 
                 default:
-                    throw new AssertionError();
+                System.out.println("Opcion no valida, intenta de nuevo.");
+                
             }
-        } while (opcion != 8);
+        } while (!"8".equals(opcion));
 
     }
 }

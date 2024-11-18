@@ -1,13 +1,17 @@
 
 public class CuentaBancaria {
 
+    //Atributos
     private String iban;
     private String titular;
-    private int saldo;
+    private double saldo;
+
+    //Movimientos de ingreso o retirado
     private Movimiento[] movimientos;
     private int nElementosActuales;
 
-    public CuentaBancaria(String iban, String titular, int saldo) {
+    //Contrustor(s)
+    public CuentaBancaria(String iban, String titular, double saldo) {
         this.iban = iban;
         this.titular = titular;
         this.saldo = 0;
@@ -18,15 +22,11 @@ public class CuentaBancaria {
         return this.iban;
     }
 
-    public void setIBAN() {
-        String iban = "^ES[0-9]{22}$";
-    }
-
     public String getTitular() {
         return this.titular;
     }
 
-    public int getSaldo() {
+    public double getSaldo() {
         return this.saldo;
     }
 
@@ -58,10 +58,17 @@ public class CuentaBancaria {
         return isRemove;
     }
 
+    //Interpolacion
     public String infoCuentaBancaria(){
        String info = String.format("Datos de la cuenta - IBAN: %s, Titular: %s, Saldo: %s", this.iban, this.titular, this.saldo);
         
         return info;
     }
+
+    public String infoSaldo(){
+        String info = String.format("Saldo: %s", this.saldo);
+         
+         return info;
+     }
 
 }

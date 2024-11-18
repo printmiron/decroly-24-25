@@ -1,11 +1,16 @@
 
+import java.time.LocalDate;
+
+
 public class Movimiento {
 
+    //Atributos
     int id;
     String fecha;
     String tipo;
     double cantidad;
 
+    //Contrustor(s)
     public Movimiento(int id, String fecha, String tipo, double cantidad) {
         this.id = id;
         this.fecha = fecha;
@@ -18,6 +23,7 @@ public class Movimiento {
     }
 
     public String getFecha() {
+        LocalDate.now();
         return this.fecha;
     }
 
@@ -29,6 +35,7 @@ public class Movimiento {
         return this.cantidad;
     }
 
+    //Interpolacion
     public String mostrarInfoMovimiento() {
 
         String info = String.format("Movimiento - ID: %s, Fecha: %s, Tipo: %s, Cantidad: %s",
