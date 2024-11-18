@@ -18,6 +18,7 @@ public class DawBank {
         CuentaBancaria cuenta = new CuentaBancaria(iban, titular, 0);
         Movimiento mov = new Movimiento(0, titular, iban, 0);
         
+        
 
         String opcion;
 
@@ -53,9 +54,11 @@ public class DawBank {
 
                 case "5":
                         System.out.println("Cuanto dinero quieres ingresar?" + cuenta.infoSaldo());
-                        int ingresoD = sc.nextInt();
+                        double ingresoD = sc.nextDouble();
 
+    
                         
+
                     break;
 
                 case "6":
