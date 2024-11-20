@@ -1,14 +1,13 @@
 
-import java.time.LocalDate;
 
 
 public class Movimiento {
 
     //Atributos
-    int id;
-    String fecha;
-    String tipo;
-    double cantidad;
+    private int id;
+    private String fecha;
+    private String tipo;
+    private double cantidad;
 
     //Contrustor(s)
     public Movimiento(int id, String fecha, String tipo, double cantidad) {
@@ -23,7 +22,6 @@ public class Movimiento {
     }
 
     public String getFecha() {
-        LocalDate.now();
         return this.fecha;
     }
 

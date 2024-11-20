@@ -11,13 +11,16 @@ public class DawBank {
         System.out.println("Nombre del titular: ");
         String titular = sc.nextLine();
 
+      
+
         System.out.println("Introduce su IBAN: ");
         String iban = sc.nextLine();
+
+        
 
         //Contructor
         CuentaBancaria cuenta = new CuentaBancaria(iban, titular, 0);
         Movimiento mov = new Movimiento(0, titular, iban, 0);
-        
 
         String opcion;
 
@@ -37,25 +40,26 @@ public class DawBank {
 
             switch (opcion) {
                 case "1":
-                        System.out.println(cuenta.infoCuentaBancaria());
+                    System.out.println(cuenta.infoCuentaBancaria());
                     break;
                 case "2":
-                        System.out.println("IBAN: " + iban);
+                    System.out.println("IBAN: " + iban);
                     break;
 
                 case "3":
-                        System.out.println("Titular: " + titular);
+                    System.out.println("Titular: " + titular);
                     break;
-                        
+
                 case "4":
-                        System.out.println(cuenta.infoSaldo());
+                    System.out.println(cuenta.infoSaldo());
                     break;
 
                 case "5":
-                        System.out.println("Cuanto dinero quieres ingresar?" + cuenta.infoSaldo());
-                        int ingresoD = sc.nextInt();
+                    System.out.println("Cuanto dinero quieres ingresar?" + cuenta.infoSaldo());
+                    int ingresoD = sc.nextInt();
 
-                        
+                    
+
                     break;
 
                 case "6":
@@ -63,16 +67,16 @@ public class DawBank {
                     break;
 
                 case "7":
-                        System.out.println(mov.mostrarInfoMovimiento() + " ");
+                    System.out.println(mov.mostrarInfoMovimiento() + " ");
                     break;
 
                 case "8":
-                        System.out.println("Hasta luego!");
+                    System.out.println("Hasta luego!");
                     break;
 
                 default:
-                System.out.println("Opcion no valida, intenta de nuevo.");
-                
+                    System.out.println("Opcion no valida, intenta de nuevo.");
+
             }
         } while (!"8".equals(opcion));
 
