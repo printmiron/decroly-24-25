@@ -21,6 +21,11 @@ public class DawBank {
         //Contructor
         CuentaBancaria cuenta = new CuentaBancaria(iban, titular, 0);
         Movimiento mov = new Movimiento(0, titular, iban, 0);
+<<<<<<< HEAD
+=======
+        
+        
+>>>>>>> 6e0c199ec2f40c9a85beab6acc0fe9f12b00a40d
 
         String opcion;
 
@@ -55,11 +60,20 @@ public class DawBank {
                     break;
 
                 case "5":
+<<<<<<< HEAD
                     System.out.println("Cuanto dinero quieres ingresar?" + cuenta.infoSaldo());
                     int ingresoD = sc.nextInt();
 
                     
 
+=======
+                        System.out.println("Cuanto dinero quieres ingresar?" + cuenta.infoSaldo());
+                        double ingresoD = sc.nextDouble();
+
+    
+                        
+
+>>>>>>> 6e0c199ec2f40c9a85beab6acc0fe9f12b00a40d
                     break;
 
                 case "6":

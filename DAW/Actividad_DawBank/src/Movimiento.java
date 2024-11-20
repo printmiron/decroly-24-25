@@ -10,7 +10,7 @@ public class Movimiento {
     private double cantidad;
 
     //Contrustor(s)
-    public Movimiento(int id, String fecha, String tipo, double cantidad) {
+    public Movimiento(int id, String fecha, String tipo, int cantidad) {
         this.id = id;
         this.fecha = fecha;
         this.tipo = tipo;
