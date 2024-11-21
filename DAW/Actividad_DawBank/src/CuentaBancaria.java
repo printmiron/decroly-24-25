@@ -18,6 +18,10 @@ public class CuentaBancaria {
         this.movimientos = new Movimiento[100];
     }
 
+    public Movimiento[] getMovimientos() {
+        return this.movimientos;
+    }
+
     public String getIBAN() {
         return this.iban;
     }
@@ -59,16 +63,22 @@ public class CuentaBancaria {
     }
 
     //Interpolacion
-    public String infoCuentaBancaria(){
-       String info = String.format("Datos de la cuenta - IBAN: %s, Titular: %s, Saldo: %s", this.iban, this.titular, this.saldo);
-        
+    public String infoCuentaBancaria() {
+        String info = String.format("Datos de la cuenta - IBAN: %s, Titular: %s, Saldo: %s", this.iban, this.titular, this.saldo);
+
         return info;
     }
 
-    public String infoSaldo(){
+    public String infoMovimientos() {
+        String info = String.format("Movimientos - Movimientos: %s", this.movimientos);
+
+        return info;
+    }
+
+    public String infoSaldo() {
         String info = String.format("Saldo: %s", this.saldo);
-         
-         return info;
-     }
+
+        return info;
+    }
 
 }

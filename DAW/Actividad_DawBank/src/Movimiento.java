@@ -1,7 +1,11 @@
 
+import java.time.LocalDateTime;
 
 
 public class Movimiento {
+
+    private static int contador = 0;
+    
 
     //Atributos
     private int id;
@@ -10,9 +14,9 @@ public class Movimiento {
     private double cantidad;
 
     //Contrustor(s)
-    public Movimiento(int id, String fecha, String tipo, int cantidad) {
-        this.id = id;
-        this.fecha = fecha;
+    public Movimiento(String tipo, int cantidad) {
+        this.id = this.contador;
+        this.fecha = LocalDateTime.now();
         this.tipo = tipo;
         this.cantidad = cantidad;
     }

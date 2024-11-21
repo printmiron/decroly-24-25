@@ -1,4 +1,180 @@
-@media (max-width: 768px) {
+@media (max-width: 768px) {}
+
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     
-    }
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 2.5fr 1.1fr 1.1fr 1.1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    gap: 2em 2em;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Producto Cantidad Unidad Total"
+        "Producto1 Cantidad1 Unidad1 Total1"
+        "Producto2 Cantidad2 Unidad2 Total2"
+        "Producto3 Cantidad3 Unidad3 Total3";
+}
+
+.Producto {
+    grid-area: Producto;
     
+}
+
+.Cantidad {
+    grid-area: Cantidad;
+    display: flex;
+    justify-content: center;
+}
+
+.Unidad {
+    grid-area: Unidad;
+    display: flex;
+    justify-content: center;
+}
+
+.Total {
+    grid-area: Total;
+    display: flex;
+    justify-content: center;
+}
+
+.Producto1 {
+    grid-area: Producto1;
+}
+
+.Producto2 {
+    grid-area: Producto2;
+}
+
+.Producto3 {
+    grid-area: Producto3;
+}
+
+.cantidad{
+    width: 3em;
+    height: 3em;
+    border-radius: 0.5em;
+}
+
+button{
+    width: 2em;
+    height: 2em;
+    margin: 5px;
+    border: none;
+    background: transparent;
+}
+
+.Cantidad1 {
+    grid-area: Cantidad1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cantidad2 {
+    grid-area: Cantidad2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cantidad3 {
+    grid-area: Cantidad3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Unidad1 {
+    grid-area: Unidad1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Unidad2 {
+    grid-area: Unidad2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Unidad3 {
+    grid-area: Unidad3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Total1 {
+    grid-area: Total1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Total2 {
+    grid-area: Total2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Total3 {
+    grid-area: Total3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "total1 total1"
+        "total2 cero";
+    background-color: rgb(231, 231, 231);
+}
+
+.total1 {
+    grid-area: total1;
+    margin-left: 2em;
+}
+
+.total2 {
+    grid-area: total2;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.cero {
+    grid-area: cero;
+    margin-top: 1em;
+    margin-left: 8em;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 5%;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "containerBig ContainerSmall";
+    margin: 15%;
+    align-items: center;
+}
+
+.containerBig {
+    grid-area: containerBig;
+}
+
+.ContainerSmall {
+    grid-area: ContainerSmall;
+}
