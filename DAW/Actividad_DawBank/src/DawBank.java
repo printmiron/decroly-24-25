@@ -7,16 +7,19 @@ public class DawBank {
 
         Scanner sc = new Scanner(System.in);
 
-        //Pida el nombre y IBAN
-        System.out.println("Nombre del titular: ");
-        String titular = sc.nextLine();
 
-        System.out.println("Introduce su IBAN: ");
-        String iban = sc.nextLine();
+
+        //Pida el nombre y IBAN
+        final String patronTitular = "[A-Z]{7,8}[A-Za-z]";
+        String titular = Utils.comprobarPatronRepetidamente(patronTitular, "Introduce su Nombre y Apellido: ");
+
+
+        final String pantronIBAN = "[A-Z]{2}[0-9]{22}";
+        String iban = Utils.comprobarPatronRepetidamente(pantronIBAN, "Introduce su IBAN: ");
 
         //Contructor
         CuentaBancaria cuenta = new CuentaBancaria(iban, titular, 0);
-        Movimiento mov = new Movimiento(0, titular, iban, 0);
+        Movimiento mov = new Movimiento(iban, cantidad);
 
         String opcion;
 
