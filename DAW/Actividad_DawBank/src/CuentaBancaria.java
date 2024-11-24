@@ -1,21 +1,19 @@
-
 public class CuentaBancaria {
 
-    //Atributos
+    // Atributos
     private String iban;
     private String titular;
     private double saldo;
-
-    //Movimientos de ingreso o retirado
     private Movimiento[] movimientos;
     private int nElementosActuales;
 
-    //Contrustor(s)
+    // Constructor
     public CuentaBancaria(String iban, String titular, double saldo) {
         this.iban = iban;
         this.titular = titular;
-        this.saldo = 0;
-        this.movimientos = new Movimiento[100];
+        this.saldo = saldo;
+        this.movimientos = new Movimiento[100]; // Hasta 100 movimientos
+        this.nElementosActuales = 0;
     }
 
     public Movimiento[] getMovimientos() {
@@ -39,6 +37,7 @@ public class CuentaBancaria {
         if (m1 != null) {
             this.movimientos[nElementosActuales] = m1;
             this.nElementosActuales++;
+            this.saldo += m1.getCantidad();
             isAdd = true;
         }
         return isAdd;
@@ -55,6 +54,7 @@ public class CuentaBancaria {
             } else {
                 this.movimientos[nElementosActuales] = m1;
                 this.nElementosActuales++;
+                this.saldo -= m1.getCantidad();
                 isRemove = true;
             }
         }
@@ -62,23 +62,11 @@ public class CuentaBancaria {
         return isRemove;
     }
 
-    //Interpolacion
     public String infoCuentaBancaria() {
-        String info = String.format("Datos de la cuenta - IBAN: %s, Titular: %s, Saldo: %s", this.iban, this.titular, this.saldo);
-
-        return info;
-    }
-
-    public String infoMovimientos() {
-        String info = String.format("Movimientos - Movimientos: %s", this.movimientos);
-
-        return info;
+        return String.format("Cuenta - IBAN: %s, Titular: %s, Saldo: %.2f", iban, titular, saldo);
     }
 
     public String infoSaldo() {
-        String info = String.format("Saldo: %s", this.saldo);
-
-        return info;
+        return String.format("Saldo disponible: %.2f", saldo);
     }
-
 }
