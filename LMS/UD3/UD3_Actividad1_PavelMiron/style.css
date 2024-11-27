@@ -1,7 +1,13 @@
 @media (max-width: 768px) {}
 
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-image: url(https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container1 {
@@ -15,12 +21,15 @@
         "Producto1 Cantidad1 Unidad1 Total1"
         "Producto2 Cantidad2 Unidad2 Total2"
         "Producto3 Cantidad3 Unidad3 Total3";
+        background-color: rgba(231, 231, 231, 0.562);
+    border-radius: 1em;
 }
 
 
 
 .Producto {
     grid-area: Producto;
+    padding-left: 1em;
 }
 
 .Cantidad {
@@ -45,14 +54,17 @@
 
 .Producto1 {
     grid-area: Producto1;
+    padding-left: 1em;
 }
 
 .Producto2 {
     grid-area: Producto2;
+    padding-left: 1em;
 }
 
 .Producto3 {
     grid-area: Producto3;
+    padding-left: 1em;
 }
 
 .cantidad {
@@ -141,9 +153,6 @@ button {
 .Linea3 { grid-area: 3 / 1 / 4 / 5; 
     border-bottom: 0.1em solid #bebebe;
 }
-.Linea4 { grid-area: 4 / 1 / 5 / 5; 
-    border-bottom: 0.1em solid #bebebe;
-}
 
 .container2 {
     display: grid;
@@ -154,7 +163,8 @@ button {
     grid-template-areas:
         "total1 total1"
         "total2 cero";
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(231, 231, 231, 0.562);
+    border-radius: 1em;
 }
 
 .total1 {
