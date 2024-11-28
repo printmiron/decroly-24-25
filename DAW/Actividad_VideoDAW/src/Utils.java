@@ -26,7 +26,7 @@ public class Utils {
 
     public static boolean comprobarPatron(String patron, String texto) {
         boolean isOk = false;
-        Pattern pat = Pattern.compile(patron); //"[0-9]{7,8}[A-Za-z]"
+        Pattern pat = Pattern.compile(patron);
         Matcher mat = pat.matcher(texto);
         isOk = mat.matches();
         return isOk;

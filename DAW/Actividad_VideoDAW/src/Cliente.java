@@ -15,10 +15,10 @@ public class Cliente {
     private LocalDate fechaNacimiento;
     private LocalDate fechaBaja;
 
-    private Pelicula [] peliculas;
+    private Pelicula[] peliculas;
     private int nElementosActuales;
 
-    public Cliente (String dni, String nombre, int nsocio, String direccion, LocalDate fechaNacimiento, LocalDate fechaBaja){
+    public Cliente(String dni, String nombre, int nsocio, String direccion, LocalDate fechaNacimiento, LocalDate fechaBaja) {
         this.dni = dni;
         this.nombre = nombre;
         this.nsocio = ++contador;
@@ -29,36 +29,35 @@ public class Cliente {
         this.nElementosActuales = 0;
     }
 
-    public String getDni(){
+    public String getDni() {
         return this.dni;
     }
 
-    public String getNombre(){
+    public String getNombre() {
         return this.nombre;
     }
 
-    public int getNsocio(){
+    public int getNsocio() {
         return this.nsocio;
     }
 
-    public String getDireccion(){
+    public String getDireccion() {
         return this.direccion;
     }
 
-    public LocalDate getFechaNacimiento(){
+    public LocalDate getFechaNacimiento() {
         return this.fechaNacimiento;
     }
 
-    public LocalDate getFechaBaja(){
+    public LocalDate getFechaBaja() {
         return this.fechaBaja;
     }
 
-
     public String mostrarInfoCliente() {
-        return String.format("DNI: %s, Nombre: %s, Numero de socio: %s, Direccion: %s, Fecha Nacimiento: %s, Fecha Baja: %s", 
-        this.dni, this.nombre, this.nsocio, this.direccion, this.fechaNacimiento, this.fechaBaja);
+        return String.format("DNI: %s, Nombre: %s, Numero de socio: %s, Direccion: %s, Fecha Nacimiento: %s, Fecha Baja: %s",
+                this.dni, this.nombre, this.nsocio, this.direccion, this.fechaNacimiento, this.fechaBaja);
     }
-    
+
     public String mostrarPeliculasAlquiladas() {
         return String.format("Peliculas Alquiladas: ", this.peliculas);
     }
