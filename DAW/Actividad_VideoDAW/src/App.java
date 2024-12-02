@@ -6,6 +6,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
 
+        Pelicula pelicula = new Pelicula(null, null, null, null, null, null, false);
+
         String opcion = null;
         do {
             System.out.println("1. Crear y registar VideoClub en la franquicia");
@@ -18,7 +20,8 @@ public class App {
             System.out.println("8. Salir");
             switch (sc.nextLine()) {
                 case "1":
-
+                    System.out.println("Introduce el nombre del VideoClub: ");
+                    String nombreVC = sc.nextLine();
                     break;
                 case "2":
 
@@ -30,7 +33,7 @@ public class App {
 
                     break;
                 case "5":
-                
+
                     break;
                 case "6":
 

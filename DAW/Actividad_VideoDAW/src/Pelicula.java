@@ -11,14 +11,6 @@ public class Pelicula {
 
     private int id;
     private String titulo;
-
-    boolean esDiscponible() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    enum genero {
-
-    }
     private LocalDate fechaRegistro;
     private LocalDate fechaBaja;
     private LocalDateTime fechaAlquiler;
@@ -59,10 +51,6 @@ public class Pelicula {
 
     public boolean getAlquilada() {
         return this.alquilada;
-    }
-
-    public boolean esDisponible() {
-        return disponible;
     }
 
     public String mostrarInfoPelicula() {

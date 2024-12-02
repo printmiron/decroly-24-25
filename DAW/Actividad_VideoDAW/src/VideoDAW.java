@@ -14,7 +14,8 @@ public class VideoDAW {
 
     private Pelicula[] peliculas;
     private Cliente[] clientes;
-    private int nElementosActuales;
+    private int PeliculasActuales;
+    private int ClientesActuales;
 
     public VideoDAW(String cif, String direccion, LocalDate fechaAlta) {
         this.cif = cif;
@@ -22,7 +23,8 @@ public class VideoDAW {
         this.fechaAlta = LocalDate.now();
         this.peliculas = new Pelicula[100];
         this.clientes = new Cliente[100];
-        this.nElementosActuales = 0;
+        this.PeliculasActuales = 0;
+        this.ClientesActuales = 0;
     }
 
     public String getCif() {
@@ -50,13 +52,45 @@ public class VideoDAW {
         return String.format("Clientes Registrados: %s", this.clientes);
     }
 
-    public void alquilarPelicula(Cliente cliente, Pelicula pelicula) {
-        if (pelicula.esDiscponible()) {
-            pelicula.alquiler();
-            System.out.println("Cliente " + cliente.getNombre() + " alquilo la pelicula " + pelicula.getTitulo());
-        }else{
-            System.out.println(" Pelicula " + pelicula.getTitulo() + " no es disponible");
+    public boolean alquilarPelicula(Pelicula p) {
+        boolean isAddP = false;
+        if (p != null) {
+            this.peliculas[PeliculasActuales] = p;
+            this.PeliculasActuales++;
+            isAddP = true;
         }
+        return isAddP;
+    }
+
+    public boolean devolverPelicula(Pelicula p) {
+        boolean isRemoveP = false;
+        if (p != null) {
+            this.peliculas[PeliculasActuales] = p;
+            this.PeliculasActuales--;
+            isRemoveP = true;
+        }
+        return isRemoveP;
+    }
+
+    public boolean darBajaCliente(Cliente c) {
+        boolean isRemoveC = false;
+        if (c != null) {
+            this.clientes[ClientesActuales] = c;
+            this.ClientesActuales++;
+            isRemoveC = true;
+        }
+        return isRemoveC;
+    }
+
+    public boolean registarCliente(Cliente c) {
+        boolean isAddC = false;
+        if (c != null) {
+            this.clientes[ClientesActuales] = c;
+            this.ClientesActuales--;
+            isAddC = true;
+
+        }
+        return isAddC;
     }
 
 }

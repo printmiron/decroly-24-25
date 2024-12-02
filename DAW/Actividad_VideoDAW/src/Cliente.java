@@ -15,8 +15,7 @@ public class Cliente {
     private LocalDate fechaNacimiento;
     private LocalDate fechaBaja;
 
-    private Pelicula[] peliculas;
-    private int nElementosActuales;
+    private Pelicula[] peliculasAlquiladas;
 
     public Cliente(String dni, String nombre, int nsocio, String direccion, LocalDate fechaNacimiento, LocalDate fechaBaja) {
         this.dni = dni;
@@ -25,8 +24,7 @@ public class Cliente {
         this.direccion = direccion;
         this.fechaNacimiento = LocalDate.now();
         this.fechaBaja = LocalDate.now();
-        this.peliculas = new Pelicula[100];
-        this.nElementosActuales = 0;
+        this.peliculasAlquiladas = new Pelicula[100];
     }
 
     public String getDni() {
@@ -54,12 +52,11 @@ public class Cliente {
     }
 
     public String mostrarInfoCliente() {
-        return String.format("DNI: %s, Nombre: %s, Numero de socio: %s, Direccion: %s, Fecha Nacimiento: %s, Fecha Baja: %s",
-                this.dni, this.nombre, this.nsocio, this.direccion, this.fechaNacimiento, this.fechaBaja);
+        return String.format("DNI: %s, Nombre: %s, Numero de socio: %s, Direccion: %s, Fecha Nacimiento: %s, Fecha Baja: %s", this.dni, this.nombre, this.nsocio, this.direccion, this.fechaNacimiento, this.fechaBaja);
     }
 
     public String mostrarPeliculasAlquiladas() {
-        return String.format("Peliculas Alquiladas: ", this.peliculas);
+        return String.format("Peliculas Alquiladas: ", this.peliculasAlquiladas);
     }
 
 }
