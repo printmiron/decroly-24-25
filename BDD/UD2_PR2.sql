@@ -5,13 +5,13 @@ use actividad2;
 create table Members (
 	id_member int auto_increment primary key,
     name varchar (40) not null,
-    email varchar (100) not null,
-    phone_number varchar (15)
+    email varchar (100) not null
 );
 
 CREATE table Instructors (
 	id_instructor int auto_increment primary key,
-    name varchar (40) not null
+    name varchar (40) not null,
+    surname varchar (40) not null
 );
 
 create table Types (
