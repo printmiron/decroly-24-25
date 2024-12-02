@@ -14,18 +14,16 @@ public class Pelicula {
     private LocalDate fechaRegistro;
     private LocalDate fechaBaja;
     private LocalDateTime fechaAlquiler;
-    private boolean alquilada;
+    private boolean esAlquilada;
     private boolean disponible;
 
-    public Pelicula(String id, String titulo, Enum genero, LocalDate fechaRegistro, LocalDate fechaBaja, LocalDateTime fechaAlquiler, boolean alquilada) {
+    public Pelicula(String id, String titulo, LocalDate fechaRegistro, LocalDate fechaBaja, LocalDateTime fechaAlquiler, boolean alquilada) {
         this.id = ++contador;
         this.titulo = titulo;
-
         this.fechaRegistro = LocalDate.now();
         this.fechaBaja = LocalDate.now();
         this.fechaAlquiler = LocalDateTime.now();
-        this.alquilada = alquilada;
-        this.disponible = true;
+        this.esAlquilada = false;
     }
 
     public int getId() {
@@ -50,26 +48,12 @@ public class Pelicula {
     }
 
     public boolean getAlquilada() {
-        return this.alquilada;
+        return this.esAlquilada;
     }
 
     public String mostrarInfoPelicula() {
-        return String.format("ID: %s, Titulo: %s, Fecha Registro: %s, Fecha Baja: %s, Fecha Aqulier: %s, Alquilada: %s,",
-                this.id, this.titulo, this.fechaRegistro, this.fechaBaja, this.fechaAlquiler, this.alquilada);
-    }
-
-    public void alquiler() {
-        if (disponible) {
-            disponible = false;
-            System.out.println("Pelicula " + titulo + " ha sido alquilada.");
-        } else {
-            System.out.println("Pelicula " + titulo + " no es disponible");
-        }
-    }
-
-    public void devolver() {
-        disponible = true;
-        System.out.println("Pelicula " + titulo + " ha sido devuelta.");
+        return String.format("ID: %s, Titulo: %s, Fecha Registro: %s, Fecha Baja: %s, Fecha Aqulier: %s, Alquilada: %s",
+                this.id, this.titulo, this.fechaRegistro, this.fechaBaja, this.fechaAlquiler, this.esAlquilada);
     }
 
 }

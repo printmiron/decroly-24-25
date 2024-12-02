@@ -6,7 +6,6 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
 
-        Pelicula pelicula = new Pelicula(null, null, null, null, null, null, false);
 
         String opcion = null;
         do {
@@ -20,8 +19,8 @@ public class App {
             System.out.println("8. Salir");
             switch (sc.nextLine()) {
                 case "1":
-                    System.out.println("Introduce el nombre del VideoClub: ");
-                    String nombreVC = sc.nextLine();
+                        System.out.println("Introduce el nombre del VideoClub: ");
+                        String nombreVC = sc.nextLine();
                     break;
                 case "2":
 
