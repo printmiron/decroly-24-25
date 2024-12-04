@@ -1,4 +1,6 @@
 
+//Modificar Aquiler peli devolver y reg cliente y baja cliente
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -8,6 +10,7 @@ public class VideoDAW {
 
     private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
+    private String nombre;
     private String cif;
     private String direccion;
     private LocalDate fechaAlta;
@@ -17,7 +20,8 @@ public class VideoDAW {
     private int PeliculasActuales;
     private int ClientesActuales;
 
-    public VideoDAW(String cif, String direccion, LocalDate fechaAlta) {
+    public VideoDAW(String nombre, String cif, String direccion) {
+        this.nombre = nombre;
         this.cif = cif;
         this.direccion = direccion;
         this.fechaAlta = LocalDate.now();
@@ -45,11 +49,12 @@ public class VideoDAW {
     }
 
     public String mostrarPeliculasRegistradas() {
-        return String.format("Peliculas Registrados: %s", this.peliculas);
+        return String.format("Peliculas Registrados: %s /n", this.peliculas);
     }
 
     public String mostrarClientesRegistrados() {
-        return String.format("Clientes Registrados: %s", this.clientes);
+        
+        return String.format("Clientes Registrados: %s /n", this.clientes);
     }
 
     public boolean alquilarPelicula(Pelicula p) {

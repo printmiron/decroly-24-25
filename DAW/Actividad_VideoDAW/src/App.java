@@ -1,4 +1,6 @@
 
+//Insertar tipos (generos) de prliculas
+
 import java.util.Scanner;
 
 public class App {
@@ -19,13 +21,33 @@ public class App {
             System.out.println("8. Salir");
             switch (sc.nextLine()) {
                 case "1":
-                        System.out.println("Introduce el nombre del VideoClub: ");
-                        String nombreVC = sc.nextLine();
-                    break;
-                case "2":
 
+                        System.out.println("Introduce el nombre del VideoClub: ");
+                        String nombre = sc.nextLine();
+
+                        System.out.println("Introduce el CIF: ");
+                        String cif = sc.nextLine();
+
+                        System.out.println("Y su direccion: ");
+                        String direccion = sc.nextLine();
+
+                        VideoDAW VideoClub = new VideoDAW(nombre, cif, direccion);
+                    break;
+
+                case "2":
+                        System.out.println("Introduce el titulo del libro: ");
+                        String titulo = sc.nextLine();
+
+                        System.out.println("Introduce su genero /n"+
+                        "Tipos: " );
+                        String genero = sc.nextLine();
+
+                        Pelicula regPelicula = new Pelicula(0, titulo, genero);
                     break;
                 case "3":
+                        final String patronDNI = "[A-Z][0-9]{7}[A-Z]";
+                        String dni = Utils.comprobarPatronRepetidamente(patronDNI, "Introduce su DNI: Ejemplo (Y7665861K)");
+
 
                     break;
                 case "4":

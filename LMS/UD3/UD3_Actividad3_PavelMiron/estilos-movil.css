@@ -1,0 +1,168 @@
+/* styles.css */
+@media (max-width: 768px) {
+    body {
+        background-color: lightgray;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .diseno-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Mantienen su proporción */
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #9c5e01;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+/* estilos imágenes*/
+.heroe img {
+    max-width: 1400px;
+    max-height: 1050px;
+}
+
+.diseno-grid img {
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Menú desplegable */
+.desplegable {
+    position: relative;
+
+}
+
+.menu-desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    list-style: none;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.desplegable:hover .menu-desplegable {
+    display: block;
+}
+
+/* Sección de bienvenida */
+.heroe {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+/* Diseño en cuadrícula */
+.diseno-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+.item-grid {
+    padding: 1rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* Tabla */
+.tabla-noticias {
+    padding: 2rem;
+    background: #ffffff;
+}
+
+table,
+td,
+th {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    padding: 1rem;
+    text-align: left;
+}
+
+/* Galería */
+.galeria {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contenedor-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.contenedor-galeria img {
+    object-fit: contain;
+    border: 1px solid #ccc;
+}
+
+/* Pie de página */
+footer {
+    background-color: #9c5e01;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}

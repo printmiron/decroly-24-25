@@ -1,4 +1,6 @@
 
+//Hacer peliculas alquiladas de cada cliente
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -17,7 +19,7 @@ public class Cliente {
 
     private Pelicula[] peliculasAlquiladas;
 
-    public Cliente(String dni, String nombre, int nsocio, String direccion, LocalDate fechaNacimiento, LocalDate fechaBaja) {
+    public Cliente(String dni, String nombre, int nsocio, String direccion) {
         this.dni = dni;
         this.nombre = nombre;
         this.nsocio = ++contador;

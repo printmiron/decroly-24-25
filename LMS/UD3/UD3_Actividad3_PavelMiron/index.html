@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Réplica educativa del sitio web de la Casa Blanca.">
+    <meta name="author" content="Tu Nombre">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="estilos-escritorio.css" media="(min-width: 769px)">
+<link rel="stylesheet" href="estilos-movil.css" media="(max-width: 768px)">
+
+</head>
+
+<body>
+    <header>
+        <div class="contenedor-header">
+            <!-- Título principal del sitio web -->
+            <h1>Biblioteca</h1>
+            <!-- Barra de navegación -->
+            <nav>
+                <ul class="menu">
+                    <!-- Cada elemento enlaza a una sección -->
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca-de">Acerca de</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li class="desplegable">
+                        Más
+                        <!-- Menú desplegable con opciones adicionales -->
+                        <ul class="menu-desplegable">
+                            <li><a href="#historia">Historia</a></li>
+                            <li><a href="#tour">Tour Virtual</a></li>
+                            <li><a href="#prensa">Comunicados de Prensa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de bienvenida con imagen destacada -->
+    <section class="heroe">
+        <h2>Bienvenidos a Biblioteca Pública Central</h2>
+        <!-- Espacio reservado para la imagen principal -->
+        <img class="img_principal" src="https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg" alt="Imagen destacada de Biblioteca Central">
+    </section>
+
+    <!-- Sección de contenido con diseño en cuadrícula -->
+    <section class="diseno-grid">
+        <!-- Elemento 1 de la cuadrícula -->
+        <div class="item-grid">
+            <h3>Citas del Presidente Mao Tse-Tung</h3>
+            <p>Es un libro publicado desde abril de 1964 por el gobierno de la República Popular China en el que se recogen citas y discursos pronunciados por Mao Tse-Tung.</p>
+            <!-- Espacio reservado para la imagen -->
+            <img src="https://pictures.abebooks.com/isbn/9788424501181-es-300.jpg" alt="Actualizaciones de Políticas">
+        </div>
+        <!-- Elemento 2 de la cuadrícula -->
+        <div class="item-grid">
+            <h3>Harry Potter</h3>
+            <p>Es una heptalogía de novelas fantásticas escrita por la autora británica J. K. Rowling, en la que se describen las aventuras del joven aprendiz de mago Harry Potter y sus amigos Hermione Granger y Ron Weasley, durante los siete años que pasan en el Colegio Hogwarts de Magia y Hechicería.</p>
+            <!-- Espacio reservado para la imagen -->
+            <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/TLJGXVGR4ZLDJASGPBHYF4O3GE.jpg" alt="Eventos Próximos">
+        </div>
+        <!-- Elemento 3 de la cuadrícula -->
+        <div class="item-grid">
+            <h3>El Señor de los Anillos</h3>
+            <p>Es una novela de fantasía épica escrita por el filólogo y escritor británico J. R. R. Tolkien. Su historia se desarrolla en la Tercera Edad del Sol de la Tierra Media, un lugar ficticio poblado por hombres y otras razas antropomorfas como los hobbits, los elfos o los enanos, así como por muchas otras criaturas reales y fantásticas. </p>
+            <!-- Espacio reservado para la imagen -->
+            <img src="https://www.planetadelibros.com/usuaris/libros/fotos/354/original/portada_el-senor-de-los-anillos-n-0103-la-comunidad-del-anillo-edicion-revisada_j-r-r-tolkien_202310231103.jpg" alt="Aprende Más">
+        </div>
+    </section>
+
+    <!-- Sección con tabla para mostrar noticias recientes -->
+    <section class="tabla-noticias">
+        <h3>Noticias Recientes</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Libro</th>
+                    <th>Autor</th>
+                    <th>Más ínfo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>El Alquimista</td>
+                    <td>Paulo Coelho</td>
+                    <td><a href="#politica">Leer más</a></td>
+                </tr>
+                <tr>
+                    <td>El Código da Vinci</td>
+                    <td>Dan Brown</td>
+                    <td><a href="#conferencia">Leer más</a></td>
+                </tr>
+                <tr>
+                    <td>Crepúsculo / La saga</td>
+                    <td>Stephenie Meyer</td>
+                    <td><a href="#iniciativa">Leer más</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Sección de galería con imágenes -->
+    <section id="galeria" class="galeria">
+        <h3>Galería de Imágenes</h3>
+        <div class="contenedor-galeria">
+            <!-- Cada imagen tiene un espacio reservado para que añadas las rutas -->
+            <img src="https://images.pexels.com/photos/1296000/pexels-photo-1296000.jpeg" alt="Galería Imagen 1">
+            <img src="https://images.pexels.com/photos/3952071/pexels-photo-3952071.jpeg" alt="Galería Imagen 2">
+            <img src="https://images.pexels.com/photos/3747468/pexels-photo-3747468.jpeg" alt="Galería Imagen 3">
+            <img src="https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg" alt="Galería Imagen 4">
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Biblioteca Pública Central</p>
+    </footer>
+</body>
+
+</html>
