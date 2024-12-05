@@ -12,7 +12,7 @@ public class VideoDAW {
 
     private String nombre;
     private String cif;
-    private String direccion;
+    private String direccionCV;
     private LocalDate fechaAlta;
 
     private Pelicula[] peliculas;
@@ -20,10 +20,10 @@ public class VideoDAW {
     private int PeliculasActuales;
     private int ClientesActuales;
 
-    public VideoDAW(String nombre, String cif, String direccion) {
+    public VideoDAW( String cif, String direccionVC) {
         this.nombre = nombre;
         this.cif = cif;
-        this.direccion = direccion;
+        this.direccionCV = direccionCV;
         this.fechaAlta = LocalDate.now();
         this.peliculas = new Pelicula[100];
         this.clientes = new Cliente[100];
@@ -35,8 +35,8 @@ public class VideoDAW {
         return this.cif;
     }
 
-    public String getDireccion() {
-        return this.direccion;
+    public String getDireccionCV() {
+        return this.direccionCV;
     }
 
     public LocalDate getFechaAlta() {
@@ -45,7 +45,7 @@ public class VideoDAW {
 
     public String mostrarInfoVideoClub() {
         return String.format("CIF: %s, Direccion: %s, Fecha Alta: %s",
-                this.cif, this.direccion, this.fechaAlta);
+                this.cif, this.direccionCV, this.fechaAlta);
     }
 
     public String mostrarPeliculasRegistradas() {

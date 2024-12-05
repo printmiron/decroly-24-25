@@ -8,7 +8,6 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
 
-
         String opcion = null;
         do {
             System.out.println("1. Crear y registar VideoClub en la franquicia");
@@ -19,19 +18,17 @@ public class App {
             System.out.println("6. Dar de baja cliente");
             System.out.println("7. Dar de baja pelicula");
             System.out.println("8. Salir");
-            switch (sc.nextLine()) {
+            opcion = sc.nextLine();
+
+            switch (opcion) {
                 case "1":
-
-                        System.out.println("Introduce el nombre del VideoClub: ");
-                        String nombre = sc.nextLine();
-
-                        System.out.println("Introduce el CIF: ");
-                        String cif = sc.nextLine();
+                        final String patronCIF = "[A-Z][0-9]{8}";
+                        String cif = Utils.comprobarPatronRepetidamente(patronCIF, "Introduce su CIF1: Ejemplo (A12345678)");
 
                         System.out.println("Y su direccion: ");
-                        String direccion = sc.nextLine();
+                        String direccionCV = sc.nextLine();
 
-                        VideoDAW VideoClub = new VideoDAW(nombre, cif, direccion);
+                        VideoDAW VideoClub = new VideoDAW(cif, direccionCV);
                     break;
 
                 case "2":
@@ -39,19 +36,29 @@ public class App {
                         String titulo = sc.nextLine();
 
                         System.out.println("Introduce su genero /n"+
-                        "Tipos: " );
+                        "Tipos: " ); //ingresar el enum
                         String genero = sc.nextLine();
 
                         Pelicula regPelicula = new Pelicula(0, titulo, genero);
+
+                        
+
                     break;
                 case "3":
                         final String patronDNI = "[A-Z][0-9]{7}[A-Z]";
-                        String dni = Utils.comprobarPatronRepetidamente(patronDNI, "Introduce su DNI: Ejemplo (Y7665861K)");
+                        String dni = Utils.comprobarPatronRepetidamente(patronDNI, "Introduce su DNI: Ejemplo (Y1234567K)");
 
+                        final String patronNombre = "[A-Z][a-z]+ [A-Z][a-z]+"; // Al menos Nombre y Apellido
+                        String nombre = Utils.comprobarPatronRepetidamente(patronNombre, "Introduce su Nombre y Apellido: ");
 
+                        System.out.println("Intoduce su direccion: ");
+                        String direccion = sc.nextLine();
+
+                        Cliente regCliente = new Cliente(dni, nombre, direccion);
+                       
                     break;
                 case "4":
-
+                        
                     break;
                 case "5":
 
@@ -69,6 +76,8 @@ public class App {
                     System.out.println("Opcion no valida, intenta de nuevo.");
             }
         } while (!"8".equals(opcion));
+
+        sc.close();
 
     }
 }

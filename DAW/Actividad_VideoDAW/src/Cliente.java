@@ -19,7 +19,7 @@ public class Cliente {
 
     private Pelicula[] peliculasAlquiladas;
 
-    public Cliente(String dni, String nombre, int nsocio, String direccion) {
+    public Cliente(String dni, String nombre, String direccion) {
         this.dni = dni;
         this.nombre = nombre;
         this.nsocio = ++contador;
