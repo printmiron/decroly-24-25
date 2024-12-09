@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class Astros {
 
@@ -5,6 +6,8 @@ public class Astros {
     private double rotacion_sobre_su_eje;
     private double temperatura_media;
     private double gravedad;
+    private List<Astros> astrosRegistrados;
+
 
     public Astros(double radio_ecuatorial, double rotacion_sobre_su_eje, double temperatura_media, double gravedad) {
         this.radio_ecuatorial = radio_ecuatorial;

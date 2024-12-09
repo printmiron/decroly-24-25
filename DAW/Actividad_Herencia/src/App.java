@@ -1,5 +1,4 @@
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
@@ -8,7 +7,7 @@ public class App {
 
         Scanner sc = new Scanner(System.in);
 
-        ArrayList<Astros> astroList = new ArrayList<>();
+        
 
         String opcion = null;
         do {
@@ -19,6 +18,7 @@ public class App {
 
             switch (opcion) {
                 case "1":
+                    //Introducir Astros
                     System.out.println("Introduce el radio ecuatorial del astro: ");
                     double radio_ecuatorial = sc.nextDouble();
 
@@ -31,15 +31,39 @@ public class App {
                     System.out.println("Introduce su gravedad: ");
                     double gravedad = sc.nextDouble();
 
-                    Astros a = new Astros(radio_ecuatorial, rotacion_sobre_su_eje, temperatura_media, gravedad);
+                    //Introducir Planetas
+                    Planetas p = new Planetas(radio_ecuatorial, radio_ecuatorial, radio_ecuatorial, radio_ecuatorial, radio_ecuatorial, radio_ecuatorial, false);
 
-                    System.out.println("Monstrar un astro");
-                    a.mostrarAstros();
+                    System.out.println("Introduce distancia al sol de la planeta: ");
+                    double distancia_al_sol = sc.nextDouble();
+
+                    System.out.println("Introduce la distancia orbita al sol: ");
+                    double orbita_al_sol = sc.nextDouble();
+
+                    System.out.println("Tiene satelites? : ");
+                    boolean tiene_satelites = sc.nextBoolean();
+                    if (tiene_satelites) {
+                        
+                    }
+
+                    //Introducir Satelites
+                    Satelites s = new Satelites(0, 0, 0, 0, 0, 0, 0);
+
+                    System.out.println("Introduce distancia del satelite de la planeta: ");
+                    double distancia_al_planeta = sc.nextDouble();
+                    
+                    System.out.println("Introduce orbita planetaria: ");
+                    double orbita_planetaria = sc.nextDouble();
+
+                    System.out.println("Introduce planeta al que pertenece el satelite: ");
+                    double planeta_al_que_pertenece = sc.nextDouble();
+
+                    
 
                     break;
 
                 case "2":
-                        
+                    
                     break;
 
                 case "3":

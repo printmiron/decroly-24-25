@@ -1,7 +1,10 @@
+import java.util.List;
+
 public class Satelites extends Astros{
     private double distancia_al_planeta;
     private double orbita_planetaria;
     private int planeta_al_que_pertenece;
+    private List<Satelites> satelitesRegistrados;
 
     public Satelites(double radio_ecuatorial, double rotacion_sobre_su_eje, double temperatura_media, double gravedad,
             double distancia_al_planeta, double orbita_planetaria, int planeta_al_que_pertenece) {

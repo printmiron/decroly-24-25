@@ -1,9 +1,11 @@
+import java.util.List;
 
 public class Planetas extends Astros {
 
     private double distancia_al_sol;
     private double orbita_al_sol;
     private boolean tiene_satelites;
+    private List<Planetas> planetasRegistrados;
 
     public Planetas(double radio_ecuatorial, double rotacion_sobre_su_eje, double temperatura_media, double gravedad,
             double distancia_al_sol, double orbita_al_sol, boolean tiene_satelites) {
