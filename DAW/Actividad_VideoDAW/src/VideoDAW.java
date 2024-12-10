@@ -1,5 +1,5 @@
-
 //Modificar Aquiler peli devolver y reg cliente y baja cliente
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -16,10 +16,10 @@ public class VideoDAW {
 
     private Pelicula[] peliculas;
     private Cliente[] clientes;
-    private int PeliculasActuales = 0;
-    private int ClientesActuales = 0;
+    private int PeliculasActuales;
+    private int ClientesActuales;
 
-    public VideoDAW(String cif, String direccionVC) {
+    public VideoDAW( String cif, String direccionVC) {
         this.nombre = nombre;
         this.cif = cif;
         this.direccionCV = direccionCV;
@@ -42,14 +42,6 @@ public class VideoDAW {
         return this.fechaAlta;
     }
 
-    public Pelicula[] getPeliculas() {
-        return this.peliculas;
-    }
-
-    public Cliente[] getClientes() {
-        return this.clientes;
-    }
-
     public String mostrarInfoVideoClub() {
         return String.format("CIF: %s, Direccion: %s, Fecha Alta: %s",
                 this.cif, this.direccionCV, this.fechaAlta);
@@ -60,72 +52,49 @@ public class VideoDAW {
     }
 
     public String mostrarClientesRegistrados() {
-
+        
         return String.format("Clientes Registrados: %s /n", this.clientes);
     }
 
-    public boolean alquilarPelicula(Pelicula p, Cliente c) {
-        if (p != null && c != null && !p.getAlquilada()) {
+    public boolean alquilarPelicula(Pelicula p) {
+        if (p != null && !p.getAlquilada()) {
+            this.peliculas[PeliculasActuales] = p;
+            this.PeliculasActuales++;
             p.setAlquilada(true);
-            System.out.println("Pelicula alquilada a " + c.getNombre());
             return true;
         }
         return false;
     }
 
-    public boolean devolverPelicula(Pelicula p, Cliente c) {
-        if (p != null && c != null && p.getAlquilada()) {
+    public boolean devolverPelicula(Pelicula p) {
+        if (p != null && !p.getAlquilada()) {
+            this.peliculas[PeliculasActuales] = p;
+            this.PeliculasActuales--;
             p.setAlquilada(false);
-            System.out.println("Pelicula devuelta por " + c.getNombre());
             return true;
         }
         return false;
     }
 
     public boolean darBajaCliente(Cliente c) {
-        for (int i = 0; i < ClientesActuales; i++) {
-            if (clientes[i].equals(c)) {
-                clientes[i] = null;
-                ClientesActuales--;
-                System.out.println("Cliente " + c.getNombre() + " ha sido dado de baja");
-                return true;
-            }
+        boolean isRemoveC = false;
+        if (c != null) {
+            this.clientes[ClientesActuales] = c;
+            this.ClientesActuales++;
+            isRemoveC = true;
         }
-        System.out.println("Cliente no encontrado");
-        return false;
+        return isRemoveC;
     }
 
-    public boolean darBajaPelicula(Pelicula p) {
-        for (int i = 0; i < PeliculasActuales; i++) {
-            if (peliculas[i].equals(p)) {
-                peliculas[i] = null;
-                PeliculasActuales--;
-                System.out.println("Pelicula " + p.getTitulo() + " ha sido dado de baja");
-                return true;
-            }
-        }
-        System.out.println("pelicula no encontrado");
-        return false;
-    }
+    public boolean registarCliente(Cliente c) {
+        boolean isAddC = false;
+        if (c != null) {
+            this.clientes[ClientesActuales] = c;
+            this.ClientesActuales--;
+            isAddC = true;
 
-    public boolean registrarCliente(Cliente c) {
-        if (ClientesActuales < clientes.length) {
-            clientes[ClientesActuales] = c;
-            ClientesActuales++;
-            System.out.println("Cliente " + c.getNombre() + " ha sido registrado");
-            return true;
         }
-        return false;
-    }
-
-    public boolean registrarPelicula(Pelicula p) {
-        if (PeliculasActuales < peliculas.length) {
-            peliculas[PeliculasActuales] = p;
-            PeliculasActuales++;
-            System.out.println("Pelicula " + p.getTitulo() + " ha sido registrada");
-            return true;
-        }
-        return false;
+        return isAddC;
     }
 
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Actividad_01/src"/>
+	<classpathentry kind="src" path="Actividad_02/src"/>
+	<classpathentry kind="src" path="Actividad_03/src"/>
+	<classpathentry kind="src" path="Actividad_04/src"/>
+	<classpathentry kind="src" path="Actividad_05/src"/>
+	<classpathentry kind="src" path="Actividad_06/src"/>
+	<classpathentry kind="src" path="Actividad_07/src"/>
+	<classpathentry kind="src" path="Actividad_DawBank/src"/>
+	<classpathentry kind="src" path="Actividad_VideoDAW/src"/>
+	<classpathentry kind="src" path="Examen_PavelMiron/src"/>
+	<classpathentry kind="src" path="TESTS/src"/>
+	<classpathentry kind="src" path="VideoDAW/src"/>
+	<classpathentry kind="output" path="Actividad_01/bin"/>
+</classpath>
