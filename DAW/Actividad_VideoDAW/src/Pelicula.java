@@ -1,6 +1,5 @@
 
 //Necesito hacer el ENUM (generos de peliculas)
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -13,13 +12,13 @@ public class Pelicula {
 
     private int id;
     private String titulo;
-    private String genero;
+    private Genero genero;
     private LocalDate fechaRegistro;
     private LocalDate fechaBaja;
     private LocalDateTime fechaAlquiler;
     private boolean esAlquilada;
 
-    public Pelicula(int id, String titulo, String genero) {
+    public Pelicula(int id, String titulo, Genero genero) {
         this.id = ++contador;
         this.titulo = titulo;
         this.genero = genero;
@@ -37,7 +36,7 @@ public class Pelicula {
         return this.titulo;
     }
 
-    public String getGenero() {
+    public Genero getGenero() {
         return this.genero;
     }
 
@@ -55,6 +54,10 @@ public class Pelicula {
 
     public boolean getAlquilada() {
         return this.esAlquilada;
+    }
+
+    public void setAlquilada(boolean alquilada) {
+        this.esAlquilada = alquilada;
     }
 
     public String mostrarInfoPelicula() {

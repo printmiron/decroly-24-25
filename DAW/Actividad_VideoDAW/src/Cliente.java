@@ -1,6 +1,4 @@
 
-//Hacer peliculas alquiladas de cada cliente
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -18,6 +16,7 @@ public class Cliente {
     private LocalDate fechaBaja;
 
     private Pelicula[] peliculasAlquiladas;
+    private int totalAlquiladas;
 
     public Cliente(String dni, String nombre, String direccion) {
         this.dni = dni;
@@ -27,6 +26,7 @@ public class Cliente {
         this.fechaNacimiento = LocalDate.now();
         this.fechaBaja = LocalDate.now();
         this.peliculasAlquiladas = new Pelicula[100];
+        this.totalAlquiladas = 0;
     }
 
     public String getDni() {
@@ -51,6 +51,25 @@ public class Cliente {
 
     public LocalDate getFechaBaja() {
         return this.fechaBaja;
+    }
+
+    public boolean agregarPelicula(Pelicula p) {
+        if (totalAlquiladas < peliculasAlquiladas.length) {
+            peliculasAlquiladas[totalAlquiladas++] = p;
+            return true;
+        }
+        return false;
+    }
+
+    public boolean eliminarPelicula(Pelicula p) {
+        for (int i = 0; i < totalAlquiladas; i++) {
+            if (peliculasAlquiladas[i].equals(p)) {
+                peliculasAlquiladas[i] = null;
+                totalAlquiladas--;
+                return true;
+            }
+        }
+        return false;
     }
 
     public String mostrarInfoCliente() {
