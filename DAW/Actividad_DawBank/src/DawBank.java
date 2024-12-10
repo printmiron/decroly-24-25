@@ -18,7 +18,7 @@ public class DawBank {
 
         String opcion;
 
-        // Menú
+        // Menu
         do {
             System.out.println("1. Datos de la cuenta");
             System.out.println("2. IBAN");
