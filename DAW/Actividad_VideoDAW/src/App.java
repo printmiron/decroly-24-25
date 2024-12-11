@@ -15,10 +15,10 @@ public class App {
             System.out.println("1. Crear y registar VideoClub en la franquicia");
             System.out.println("2. Registar pelicula en videoclub");
             System.out.println("3. Crear y registar cliente en videoclub");
-            System.out.println("4. Alquilar pelicula");
-            System.out.println("5. Devolver pelicula");
+            System.out.println("4. Alquilar pelicula"); //
+            System.out.println("5. Devolver pelicula"); //
             System.out.println("6. Dar de baja cliente");
-            System.out.println("7. Dar de baja pelicula");
+            System.out.println("7. Dar de baja pelicula");//
             System.out.println("8. Ver todos los clientes");
             System.out.println("9. Ver todas las peliculas");
             System.out.println("10. Salir");

@@ -63,7 +63,8 @@ ubicacion int
 );
 
 create table Personal_humano(
-DNI_NIE varchar(9) primary key,
+id_personal int auto_increment primary key,
+DNI_NIE varchar(9),
 nombre varchar(40),
 apellido varchar(40),
 rol varchar(50),
@@ -86,7 +87,7 @@ id_estanteria_producto int auto_increment primary key,
 cantidad_almacenada int not null,
 id_producto int,
 id_estanteria int,
-foreign key (id_producto) references Producto(id_rproducto),
+foreign key (id_producto) references Producto(id_producto),
 foreign key (id_estanteria) references Estanteria(id_estanteria)
 );
 
@@ -123,8 +124,12 @@ create table Modulo_de_enegia_Robot_AL_Empaque_Drone(
 id_modulo_robot_AL_EM_DR int auto_increment primary key,
 fecha_recarga time not null,
 duracion_recarga time not null,
-foreign key (id_modulo) references Modulo_energia(id_modulo),
-foreign key (id_robot_almacenamiento) references Robot_de_AL(id_robot_almacenamient),
+id_modulo int,
+id_robot_almacenamiento int,
+id_robot_de_empaque int,
+id_drone int,
+foreign key (id_modulo) references Modulo_de_enegia(id_modulo),
+foreign key (id_robot_almacenamiento) references Robot_de_AL(id_robot_almacenamiento),
 foreign key (id_robot_de_empaque) references Robot_de_empaque(id_robot_de_empaque),
 foreign key (id_drone) references Drone(id_drone)
 );
@@ -133,8 +138,12 @@ create table Personal_humano_Robot_AL_Empaque_Drone(
 id_modulo_robot_AL_EM_DR int auto_increment primary key,
 fecha_mantenimiento time not null,
 descripcion_de_la_tarea varchar(100),
+id_personal int,
+id_robot_almacenamiento int,
+id_robot_de_empaque int,
+id_drone int,
 foreign key (id_personal) references Personal_humano(id_personal),
-foreign key (id_robot_almacenamiento) references Robot_de_AL(id_robot_almacenamient),
+foreign key (id_robot_almacenamiento) references Robot_de_AL(id_robot_almacenamiento),
 foreign key (id_robot_de_empaque) references Robot_de_empaque(id_robot_de_empaque),
 foreign key (id_drone) references Drone(id_drone)
 );
