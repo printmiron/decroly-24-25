@@ -1,0 +1,36 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.1fr 0.3fr 1.9fr 0.7fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Titulo y subtitulo Titulo y subtitulo Titulo y subtitulo Logo"
+      "Titulo1 Titulo2 Titulo3 Titulo4"
+      "Lista1 Lista2 Lista3 Lista4"
+      "Hashtag Hashtag Hashtag Logo1";
+  }
+  
+  .Titulo y subtitulo { grid-area: Titulo y subtitulo; }
+  
+  .Logo { grid-area: Logo; }
+  
+  .Titulo1 { grid-area: Titulo1; }
+  
+  .Titulo2 { grid-area: Titulo2; }
+  
+  .Titulo3 { grid-area: Titulo3; }
+  
+  .Titulo4 { grid-area: Titulo4; }
+  
+  .Lista1 { grid-area: Lista1; }
+  
+  .Lista2 { grid-area: Lista2; }
+  
+  .Lista3 { grid-area: Lista3; }
+  
+  .Lista4 { grid-area: Lista4; }
+  
+  .Logo1 { grid-area: Logo1; }
+  
+  .Hashtag { grid-area: Hashtag; }
+  
