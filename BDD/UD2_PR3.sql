@@ -143,7 +143,7 @@ id_robot_almacenamiento int,
 id_robot_de_empaque int,
 id_drone int,
 foreign key (id_personal) references Personal_humano(id_personal),
-foreign key (id_robot_almacenamiento) references Robot_de_AL(id_robot_almacenamiento),
+foreign key (id_robot_almacenamiento) references Robot_de_AL(id_robot_almacenamiento              ),
 foreign key (id_robot_de_empaque) references Robot_de_empaque(id_robot_de_empaque),
 foreign key (id_drone) references Drone(id_drone)
 );
