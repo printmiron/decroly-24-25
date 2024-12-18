@@ -1,7 +1,10 @@
 import java.util.List;
 
-public class Astros {
+public abstract class Astros {
 
+    private static int contador = 0;
+
+    private int id;
     private double radio_ecuatorial;
     private double rotacion_sobre_su_eje;
     private double temperatura_media;
@@ -10,6 +13,7 @@ public class Astros {
 
 
     public Astros(double radio_ecuatorial, double rotacion_sobre_su_eje, double temperatura_media, double gravedad) {
+        this.id = ++contador;
         this.radio_ecuatorial = radio_ecuatorial;
         this.rotacion_sobre_su_eje = rotacion_sobre_su_eje;
         this.temperatura_media = temperatura_media;
@@ -17,10 +21,15 @@ public class Astros {
     }
 
     public void mostrarAstros(){
+        System.out.println("ID: " + this.id);
         System.out.println("Radio ecuatorial: " + this.radio_ecuatorial);
         System.out.println("Rotacion sobre su eje: " + this.radio_ecuatorial);
         System.out.println("Temperatura media: " + this.temperatura_media);
         System.out.println("Gravedad: " + this.gravedad);
+    }
+
+    public int getId() {
+        return this.id;
     }
 
     public double getRadio_ecuatorial() {

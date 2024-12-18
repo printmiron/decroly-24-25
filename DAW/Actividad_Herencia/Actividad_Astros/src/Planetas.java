@@ -7,8 +7,9 @@ public class Planetas extends Astros {
     private boolean tiene_satelites;
     private List<Planetas> planetasRegistrados;
 
-    public Planetas(double radio_ecuatorial, double rotacion_sobre_su_eje, double temperatura_media, double gravedad,
+    public Planetas(int id, double radio_ecuatorial, double rotacion_sobre_su_eje, double temperatura_media, double gravedad,
             double distancia_al_sol, double orbita_al_sol, boolean tiene_satelites) {
+                
         super(radio_ecuatorial, rotacion_sobre_su_eje, temperatura_media, gravedad);
         this.distancia_al_sol = distancia_al_sol;
         this.orbita_al_sol = orbita_al_sol;

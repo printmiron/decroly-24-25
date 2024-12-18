@@ -6,7 +6,7 @@ public class Satelites extends Astros{
     private int planeta_al_que_pertenece;
     private List<Satelites> satelitesRegistrados;
 
-    public Satelites(double radio_ecuatorial, double rotacion_sobre_su_eje, double temperatura_media, double gravedad,
+    public Satelites(int id, double radio_ecuatorial, double rotacion_sobre_su_eje, double temperatura_media, double gravedad,
             double distancia_al_planeta, double orbita_planetaria, int planeta_al_que_pertenece) {
         super(radio_ecuatorial, rotacion_sobre_su_eje, temperatura_media, gravedad);
         this.distancia_al_planeta = distancia_al_planeta;
