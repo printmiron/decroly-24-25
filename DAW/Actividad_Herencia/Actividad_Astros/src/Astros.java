@@ -20,14 +20,6 @@ public abstract class Astros {
         this.gravedad = gravedad;
     }
 
-    public void mostrarAstros(){
-        System.out.println("ID: " + this.id);
-        System.out.println("Radio ecuatorial: " + this.radio_ecuatorial);
-        System.out.println("Rotacion sobre su eje: " + this.radio_ecuatorial);
-        System.out.println("Temperatura media: " + this.temperatura_media);
-        System.out.println("Gravedad: " + this.gravedad);
-    }
-
     public int getId() {
         return this.id;
     }
@@ -47,5 +39,13 @@ public abstract class Astros {
     public double getGravedad() {
         return this.gravedad;
     }
+
+    @Override
+    public String toString() {
+        return "Astros [id=" + id + ", radio_ecuatorial=" + radio_ecuatorial + ", rotacion_sobre_su_eje="
+                + rotacion_sobre_su_eje + ", temperatura_media=" + temperatura_media + ", gravedad=" + gravedad + "]";
+    }
+
+    
 
 }

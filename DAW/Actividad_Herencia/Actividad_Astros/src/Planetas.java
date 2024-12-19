@@ -17,7 +17,7 @@ public class Planetas extends Astros {
     }
 
     public void mostrarInfoAstros(){
-        super.mostrarAstros();
+        super.toString();
         System.out.println("Distancia al sol " + this.distancia_al_sol);
         System.out.println("Orbita al sol: " + this.orbita_al_sol);
         System.out.println("Tiene satelites: " + this.tiene_satelites);

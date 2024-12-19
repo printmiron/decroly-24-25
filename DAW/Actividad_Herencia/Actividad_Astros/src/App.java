@@ -8,7 +8,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         String opcionMenu;
-        String opcionAstros;
+        
 
         do {
             System.out.println("1. Registrar Astro");
@@ -33,15 +33,15 @@ public class App {
                     System.out.println("Introduce su gravedad: ");
                     double gravedad = sc.nextDouble();
 
-                    Astros a = new Astros(radio_ecuatorial, rotacion_sobre_su_eje, temperatura_media, gravedad);
+                    Astros astros = new Astros(radio_ecuatorial, rotacion_sobre_su_eje, temperatura_media, gravedad);
 
                     break;
 
                 case "2":
 
-                    System.out.println("Elige el Astro con su id en el cual quieres introducir las planetas: ");
+                    System.out.println(astros.toString());
                     
-                   
+
 
                     break;
 
